@@ -15,7 +15,8 @@
     execute_commands:
     - "hugo"
     setup_commands:
-    - "apt-get update && apt-get install -y git hugo"
+    - "add-apt-repository ppa:longsleep/golang-backports"
+    - "apt-get update && apt-get install -y git golang-go hugo"
     volume_mappings:
     - "/:/buddy/n0tr00t"
     cache_base_image: true
