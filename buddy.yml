@@ -1,0 +1,22 @@
+- pipeline: "pages"
+  on: "EVENT"
+  events:
+  - type: "PUSH"
+    refs:
+    - "refs/heads/main"
+  priority: "NORMAL"
+  fail_on_prepare_env_warning: true
+  actions:
+  - action: "Execute: hugo"
+    type: "BUILD"
+    working_directory: "/buddy/n0tr00t"
+    docker_image_name: "library/ubuntu"
+    docker_image_tag: "latest"
+    execute_commands:
+    - "hugo"
+    setup_commands:
+    - "apt-get update && apt-get install -y git hugo"
+    volume_mappings:
+    - "/:/buddy/n0tr00t"
+    cache_base_image: true
+    shell: "BASH"
