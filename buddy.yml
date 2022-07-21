@@ -37,5 +37,5 @@
     type: "PUSH"
     git_auth_mode: "CURRENT"
     push_url: "n0tr00teuorg/n0tr00teuorg.gitlab.io"
-    comment: "$BUDDY_EXECUTION_ID"
+    comment: "$BUDDY_EXECUTION_START_DATE"
     without_force: true
