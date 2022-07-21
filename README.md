@@ -6,27 +6,27 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=n0tr00teuorg_n0tr00teuorg.gitlab.io&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=n0tr00teuorg_n0tr00teuorg.gitlab.io)
 
 ## ToDo  
-- [ ] 域名
-: - [x] eu.org
-: - [ ] js.org
-- [ ] 代码托管
-: - [ ] Gitee
-: - [x] GitLab
-: - [x] GitHub
-- [ ] 自动部署
-: - [x] Buddy
-: - [x] netlify
-: - [ ] ...
+- [x] 域名
+	- [x] eu.org
+	- [ ] js.org
+- [x] 代码托管
+	- ~~ [ ] Gitee~~
+	- [x] GitLab
+	- [x] GitHub
+- [x] 自动部署
+	- [x] Buddy
+	- [x] netlify
+	- [ ] ...
 - [ ] 评论
-: - [ ] ...
+	- [ ] ...
 - [ ] CDN
-: - [ ] ...
+	- [ ] ...
 - [ ] SEO
-: - [ ] Google
-: - [ ] Yandex
-: - [ ] Bing
-: - [ ] Yahoo
-: - [ ] Baidu
-: - [ ] 360
-: - [ ] Sogou
-: - [ ] ...
+	- [ ] Google
+	- [ ] Yandex
+	- [ ] Bing
+	- [ ] Yahoo
+	- [ ] Baidu
+	- [ ] 360
+	- [ ] Sogou
+	- [ ] ...
