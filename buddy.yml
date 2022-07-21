@@ -53,4 +53,6 @@
     comment: "$BUDDY_EXECUTION_START_DATE"
     without_force: true
     trigger_conditions:
-    - trigger_condition: "ON_CHANGE"
+    - trigger_condition: "ON_CHANGE_AT_PATH"
+      trigger_condition_paths:
+      - "/docs"
