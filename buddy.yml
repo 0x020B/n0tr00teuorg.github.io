@@ -55,4 +55,12 @@
     trigger_conditions:
     - trigger_condition: "ON_CHANGE_AT_PATH"
       trigger_condition_paths:
+      - "/archetypes"
+      - "/config.toml"
+      - "/content"
+      - "/data"
       - "/docs"
+      - "/layouts"
+      - "/resources"
+      - "/static"
+      - "/themes"
