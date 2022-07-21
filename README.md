@@ -10,7 +10,7 @@
 	- [x] eu.org
 	- [ ] js.org
 - [x] 代码托管
-	~~- [ ] Gitee~~
+	- [ ] ~~Gitee~~
 	- [x] GitLab
 	- [x] GitHub
 - [x] 自动部署
