@@ -26,10 +26,10 @@
     - "rm -rvf docs &&\\"
     - "mv -fv public docs"
     setup_commands:
-    - "apt-get update &&\\"
-    - "apt-get install -y software-properties-common &&\\"
-    - "apt-get update &&\\"
-    - "add-apt-repository ppa:longsleep/golang-backports &&\\"
+    - "apt-get update"
+    - "apt-get install -y software-properties-common"
+    - "add-apt-repository ppa:longsleep/golang-backports"
+    - "apt-get update"
     - "apt-get install -y golang-go hugo"
     volume_mappings:
     - "/:/buddy/n0tr00t"
