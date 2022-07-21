@@ -343,7 +343,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     RootMe= ""
     Email = "blog@n0tr00t.eu.org"
     Phone = ""
-    RSS = ""
+    RSS = "https://n0tr00t.eu.org/index.xml"
 
   # Page global config
   # 文章页面全局配置
