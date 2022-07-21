@@ -6,6 +6,15 @@
     - "refs/heads/main"
   priority: "NORMAL"
   fail_on_prepare_env_warning: true
+  trigger_conditions:
+  - trigger_condition: "VAR_IS"
+    trigger_variable_value: "$OWNER_EMAIL"
+    trigger_variable_key: "BUDDY_EXECUTION_REVISION_COMMITTER_EMAIL"
+  variables:
+  - key: "OWNER_EMAIL"
+    value: "secure!R6iuQ26d/Ba+cmjNPr/ua0Oo/3YjwnyN4kLRW6F0Dx8=.O7KCwvtQ3jx+crlt8ZpYsA=="
+    type: "VAR"
+    encrypted: true
   actions:
   - action: "Execute: hugo"
     type: "BUILD"
@@ -24,3 +33,9 @@
     - "/:/buddy/n0tr00t"
     cache_base_image: true
     shell: "BASH"
+  - action: "Push to n0tr00teuorg/n0tr00teuorg.gitlab.io"
+    type: "PUSH"
+    git_auth_mode: "CURRENT"
+    push_url: "n0tr00teuorg/n0tr00teuorg.gitlab.io"
+    comment: "$BUDDY_EXECUTION_ID"
+    without_force: true
