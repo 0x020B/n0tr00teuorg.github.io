@@ -1,11 +1,18 @@
 version: 2.1
 jobs:
-  build:
+  build-check:
     docker:
-      - image: alpine:3.15
+      - image: cibuilds/hugo:0.62
+    working_directory: ~/n0tr00teuorg.gitlab.io
     steps:
-      - run:
-          name: The First Step
-          command: |
-            echo 'Hello World!'
-            echo 'This is the delivery pipeline'
+      - checkout
+      - run: git submodule sync
+      - run: git submodule update --init
+      - run: hugo -v --gc
+      - run: mv public docs
+      - run: htmlproofer docs --check-html --allow-hash-href --empty-alt-ignore --disable-external
+
+workflows:
+  build-check-exampleSite:
+    jobs:
+      - build-check
