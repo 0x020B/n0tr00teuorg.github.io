@@ -341,7 +341,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Plume = ""
     HackTheBox = ""
     RootMe= ""
-    Email = "mailto:blog@n0tr00t.eu.org"
+    Email = "blog@n0tr00t.eu.org"
     Phone = ""
     RSS = ""
 
