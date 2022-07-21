@@ -22,7 +22,8 @@
     docker_image_name: "library/ubuntu"
     docker_image_tag: "latest"
     execute_commands:
-    - "hugo"
+    - "hugo &&\\"
+    - "mv -fv pubilc/* docs"
     setup_commands:
     - "apt-get update &&\\"
     - "apt-get install -y software-properties-common &&\\"
