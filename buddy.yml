@@ -23,7 +23,7 @@
     docker_image_tag: "latest"
     execute_commands:
     - "hugo &&\\"
-    - "mv -rv public docs"
+    - "mv -v public docs"
     setup_commands:
     - "apt-get update &&\\"
     - "apt-get install -y software-properties-common &&\\"
