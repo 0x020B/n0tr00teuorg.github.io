@@ -6,7 +6,6 @@ theme = ["github.com/dillonzq/LoveIt"]
 title = "n0tr00t's blog"
 
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
-defaultContentLang = 'zh-CN'
 languageCode = "zh-CN"
 # 语言名称 ["English", "简体中文", "Français", "Polski", ...]
 languageName = "简体中文"
