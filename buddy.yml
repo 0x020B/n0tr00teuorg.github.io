@@ -22,12 +22,13 @@
     docker_image_name: "library/ubuntu"
     docker_image_tag: "latest"
     execute_commands:
-    - "GPG_TTY=$(tty) gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --import $PRIVEKEY"
-    - "GPG_TTY=$(tty) gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --decrypt-files content/posts/*.gpg"
+    - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --import $PRIVEKEY"
+    - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --decrypt-files content/posts/*.gpg"
     - "hugo --minify --gc"
     - "rm -rvf content/posts/*.md docs"
     - "mv -fv public docs"
     setup_commands:
+    - "mknod -m 600 /dev/tty c 5 0"
     - "apt-get update"
     - "apt-get install -y software-properties-common"
     - "add-apt-repository ppa:longsleep/golang-backports"
