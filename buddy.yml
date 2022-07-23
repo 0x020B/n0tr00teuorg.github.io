@@ -25,8 +25,7 @@
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --import $PRIVEKEY"
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --yes --decrypt-files content/posts/*.gpg"
     - "hugo --minify --gc"
-    - "rm -rvf content/posts/*.md docs"
-    - "mv -fv public docs"
+    - "rm -rvf content/posts/*.md docs/**/*.gpg"
     setup_commands:
     - "apt-get update"
     - "apt-get install -y software-properties-common"
