@@ -15,5 +15,14 @@
     <description><![CDATA[<p>Hello World!</p>
 ]]></description>
 </item>
+<item>
+    <title></title>
+    <link>https://n0rt00t.eu.org/posts/1/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>n0tr00t</author>
+    <guid>https://n0rt00t.eu.org/posts/1/</guid>
+    <description><![CDATA[<p>1</p>
+]]></description>
+</item>
 </channel>
 </rss>
