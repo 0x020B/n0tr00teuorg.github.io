@@ -18,7 +18,7 @@ paginate = 12
 # 谷歌分析代号 [UA-XXXXXXXX-X]
 googleAnalytics = ""
 # 版权描述，仅仅用于 SEO
-copyright = ""
+copyright = "CC BY-NC-SA 4.0"
 
 # 是否使用 robots.txt
 enableRobotsTXT = true
@@ -181,7 +181,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-    title = ""
+    title = "n0tr00t"
     # whether to omit favicon resource links
     # 是否隐藏网站图标资源链接
     noFavicon = true
@@ -210,7 +210,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     contentLength = 4000
     # placeholder of the search bar
     # 搜索框的占位提示语
-    placeholder = ""
+    placeholder = "阁下想找些什么呢？"
     # max number of results length
     # 最大结果数目
     maxResultLength = 10
@@ -222,7 +222,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     highlightTag = "em"
     # whether to use the absolute URL based on the baseURL in search index
     # 是否在搜索索引中使用基于 baseURL 的绝对路径
-    absoluteURL = false
+    absoluteURL = true
     [params.search.algolia]
       index = ""
       appID = ""
@@ -246,7 +246,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       avatarURL = ""
       # title shown in home page (HTML format is supported)
       # 主页显示的网站标题 (支持 HTML 格式)
-      title = ""
+      title = "n0tr00t's blog"
       # subtitle shown in home page (HTML format is supported)
       # 主页显示的网站副标题 (允许 HTML 格式)
       subtitle = ""
@@ -359,7 +359,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     twemoji = true
     # whether to enable lightgallery
     # 是否使用 lightgallery
-    lightgallery = false
+    lightgallery = true
     # whether to enable the ruby extended syntax
     # 是否使用 ruby 扩展语法
     ruby = true
