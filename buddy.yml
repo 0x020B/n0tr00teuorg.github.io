@@ -24,7 +24,7 @@
     execute_commands:
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --import $PRIVEKEY"
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --decrypt-files content/posts/*.gpg"
-    - "hugo"
+    - "hugo --minif --gc"
     - "rm -rvf content/posts/*.md docs"
     - "mv -fv public docs"
     setup_commands:
@@ -41,6 +41,7 @@
     - trigger_condition: "ON_CHANGE_AT_PATH"
       trigger_condition_paths:
       - "/archetypes"
+      - "/buddy.yml"
       - "/config.toml"
       - "/content"
       - "/data"
@@ -58,6 +59,7 @@
     - trigger_condition: "ON_CHANGE_AT_PATH"
       trigger_condition_paths:
       - "/archetypes"
+      - "/buddy.yml"
       - "/config.toml"
       - "/content"
       - "/data"
