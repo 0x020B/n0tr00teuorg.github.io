@@ -22,7 +22,6 @@
     docker_image_name: "library/ubuntu"
     docker_image_tag: "latest"
     execute_commands:
-    - "cat /buddy-variables/privkey.asc | gpg --import -"
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --decrypt-files content/posts/*.gpg"
     - "hugo"
     - "rm -rvf content/posts/*.md docs"
@@ -33,6 +32,7 @@
     - "add-apt-repository ppa:longsleep/golang-backports"
     - "apt-get update"
     - "apt-get install -y golang-go hugo"
+    - "gpg --import /buddy-variables/privkey.asc"
     volume_mappings:
     - "/:/buddy/n0tr00t"
     cache_base_image: true
