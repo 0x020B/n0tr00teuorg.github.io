@@ -22,7 +22,7 @@
     docker_image_name: "library/ubuntu"
     docker_image_tag: "latest"
     execute_commands:
-    - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --import $PRIVKEY"
+    - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --import $PRIVEKEY"
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --decrypt-files content/posts/*.gpg"
     - "hugo"
     - "rm -rvf content/posts/*.md docs"
