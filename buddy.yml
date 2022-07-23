@@ -28,7 +28,6 @@
     - "rm -rvf content/posts/*.md docs"
     - "mv -fv public docs"
     setup_commands:
-      #- "mknod -m 600 /dev/tty c 5 0"
     - "apt-get update"
     - "apt-get install -y software-properties-common"
     - "add-apt-repository ppa:longsleep/golang-backports"
