@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://n0rt00t.eu.org/sitemap.xml
+Sitemap: https://n0tr00t.eu.org/sitemap.xml
