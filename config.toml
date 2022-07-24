@@ -1,4 +1,4 @@
-baseURL = "https://n0rt00t.eu.org/"
+baseURL = "https://n0tr00t.eu.org/"
 canonifyURLs = true
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = ["github.com/dillonzq/LoveIt"]
