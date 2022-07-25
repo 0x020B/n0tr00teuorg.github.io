@@ -250,7 +250,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       title = "n0tr00t's blog"
       # subtitle shown in home page (HTML format is supported)
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "<p id='hitokoto'></p><script>fetch('https://v1.hitokoto.cn').then(response => response.json()).then(data => {document.getElementById('hitokoto').innerText = data.hitokoto}).catch(console.error)</script>"
+      subtitle = ""
       # whether to use typeit animation for subtitle
       # 是否为副标题显示打字机动画
       typeit = false
@@ -445,31 +445,31 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       enable = true
       Twitter = true
       Facebook = true
-      Linkedin = false
-      Whatsapp = false
-      Pinterest = false
-      Tumblr = false
+      Linkedin = true
+      Whatsapp = true
+      Pinterest = true
+      Tumblr = true
       HackerNews = true
       Reddit = true
-      VK = false
-      Buffer = false
-      Xing = false
+      VK = true
+      Buffer = true
+      Xing = true
       Line = true
-      Instapaper = false
+      Instapaper = true
       Pocket = true
-      Flipboard = false
+      Flipboard = true
       Weibo = true
       Blogger = true
       Baidu = true
-      Odnoklassniki = false
+      Odnoklassniki = true
       Evernote = true
       Skype = true
-      Trello = false
-      Mix = false
+      Trello = true
+      Mix = true
     # Comment config
     # 评论系统设置
     [params.page.comment]
-      enable = false
+      enable = true
       # Disqus comment config (https://disqus.com/)
       # Disqus 评论系统设置 (https://disqus.com/)
       [params.page.comment.disqus]
@@ -591,7 +591,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Publisher info
       # 出版者信息
       [params.page.seo.publisher]
-        name = ""
+        name = "n0tr00t"
         logoUrl = ""
 
   # TypeIt config
@@ -676,14 +676,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # 位于 "themes/LoveIt/assets/data/cdn/" 目录
     # 可以在你的项目下相同路径存放你自己的数据文件:
     # "assets/data/cdn/"
-    #data = "jsdelivr.yml"
+    data = "jsdelivr.yml"
 
   # Compatibility config
   # 兼容性设置
   [params.compatibility]
     # whether to use Polyfill.io to be compatible with older browsers
     # 是否使用 Polyfill.io 来兼容旧式浏览器
-    polyfill = true
+    polyfill = false
     # whether to use object-fit-images to be compatible with older browsers
     # 是否使用 object-fit-images 来兼容旧式浏览器
     objectFit = false
