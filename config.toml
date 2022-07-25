@@ -253,7 +253,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       subtitle = "<script src='https://v1.hitokoto.cn/?encode=js' defer></script>"
       # whether to use typeit animation for subtitle
       # 是否为副标题显示打字机动画
-      typeit = true
+      typeit = false
       # whether to show social links
       # 是否显示社交账号
       social = true
