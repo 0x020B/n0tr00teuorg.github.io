@@ -250,7 +250,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       title = "n0tr00t's blog"
       # subtitle shown in home page (HTML format is supported)
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "<p id='hitokoto'></p><script>fetch('https://v1.hitokoto.cn').then(response => response.json()).then(data => {const hitokoto = document.getElementById('hitokoto');hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid;hitokoto.innerText = data.hitokoto}).catch(console.error)</script>"
+      subtitle = "<p id='hitokoto'></p><script>fetch('https://v1.hitokoto.cn').then(response => response.json()).then(data => {document.getElementById('hitokoto').innerText = data.hitokoto}).catch(console.error)</script>"
       # whether to use typeit animation for subtitle
       # 是否为副标题显示打字机动画
       typeit = false
