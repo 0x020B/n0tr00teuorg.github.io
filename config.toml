@@ -24,7 +24,7 @@ enableGitInfo = true
 enableEmoji = true
 
 # 忽略一些构建错误
-ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]i
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
