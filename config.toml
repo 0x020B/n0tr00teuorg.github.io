@@ -26,9 +26,6 @@ enableEmoji = true
 # 忽略一些构建错误
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
 # 作者配置
 [author]
   name = "n0tr00t"
@@ -653,11 +650,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Cookie consent config
   # Cookie 许可配置
   [params.cookieconsent]
-    enable = false
+    enable = true
     # text strings used for Cookie consent banner
     # 用于 Cookie 许可横幅的文本字符串
     [params.cookieconsent.content]
-      message = ""
+      message = "无论你接受与否，本站都不会要你的Cookie。"
       dismiss = ""
       link = ""
 
