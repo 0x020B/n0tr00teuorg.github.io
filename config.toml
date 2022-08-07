@@ -627,7 +627,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Analytics config
   # 网站分析配置
   [params.analytics]
-    enable = false
+    enable = true
     # Google Analytics
     [params.analytics.google]
       id = ""
@@ -642,7 +642,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       server = ""
     # Plausible Analytics
     [params.analytics.plausible]
-      dataDomain = ""
+      dataDomain = "n0tr00t.eu.org"
     # Yandex Metrica
     [params.analytics.yandexMetrica]
       id = ""
