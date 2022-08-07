@@ -200,7 +200,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     enable = true
     # type of search engine ["lunr", "algolia"]
     # 搜索引擎的类型 ["lunr", "algolia"]
-    type = "lunr"
+    type = "algolia"
     # max index length of the chunked content
     # 文章内容最长索引长度
     contentLength = 4000

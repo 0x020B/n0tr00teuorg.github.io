@@ -1,0 +1,6 @@
+.git
+.github
+.hugo_build.lock
+content/posts/.obsidian
+content/posts/.*.md
+docs/*/.*.md.gpg
