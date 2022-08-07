@@ -1,17 +1,12 @@
 baseURL = "https://n0tr00t.eu.org/"
 canonifyURLs = true
-# 更改使用 Hugo 构建网站时使用的默认主题
 theme = ["github.com/dillonzq/LoveIt"]
 publishDir = "docs"
-# 网站标题
 title = "n0tr00t's blog"
 
-# 网站语言, 仅在这里 ["en", "zh", "fr", "pl", ...]
 DefaultContentLanguage = "zh"
 languageCode = "zh"
-# 语言名称 ["English", "简体中文", "Français", "Polski", ...]
 languageName = "简体中文"
-# 是否包括中日韩文字
 hasCJKLanguage = true
 
 # 默认每页列表显示的文章数目
@@ -351,10 +346,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.page]
     # whether to hide a page from home page
     # 是否在主页隐藏一篇文章
-    hiddenFromHomePage = false
+    hiddenFromHomePage = true
     # whether to hide a page from search results
     # 是否在搜索结果中隐藏一篇文章
-    hiddenFromSearch = false
+    hiddenFromSearch = true
     # whether to enable twemoji
     # 是否使用 twemoji
     twemoji = true
