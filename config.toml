@@ -253,7 +253,20 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       title = "n0tr00t's blog"
       # subtitle shown in home page (HTML format is supported)
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = ""
+      subtitle = '<script type="application/javascript">
+$(document).ready(function() {
+    $.getJSON("https://api.ip.sb/geoip?callback=?",
+        function(json) {
+            document.write("IP address: ", json.ip);
+            document.write("Timezone: ", json.timezone);
+            document.write("Country: ", json.country);
+            document.write("City: ", json.city);
+            document.write("Latitude: ", json.latitude);
+            document.write("Longitude: ", json.longitude);
+        }
+    );
+});
+</script>'
       # whether to use typeit animation for subtitle
       # 是否为副标题显示打字机动画
       typeit = false
