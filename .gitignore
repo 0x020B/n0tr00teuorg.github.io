@@ -2,5 +2,5 @@
 /.github
 /.hugo_build.lock
 /content/posts/.obsidian
-/content/posts/**/*.md
+/content/**/*.md
 /docs/**/*.md.gpg
