@@ -47,6 +47,7 @@
 		- [ ] notrootykjdsvjxjqbwddsb2tvp6ndfmkhaawfrj3q6rueq4lpqllayd.onion
 - [x] 代码托管
 	- [ ] ~~Gitee~~
+	- [ ] Gitea
 	- [x] GitLab
 	- [x] GitHub
 - [x] 自动部署
@@ -59,7 +60,7 @@
 	- [ ] ...
 - [ ] 爬虫
 	- [ ] Google
-	- [ ] Yandex
+	- [x] Yandex
 	- [x] Bing
 	- [ ] Yahoo
 	- [ ] Baidu
