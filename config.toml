@@ -81,7 +81,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-  gitRepo = "https://gitlab.com/n0tr00teuorg/n0tr00teuorg.gitlab.io"
+  gitRepo = "https://github.com/n0tr00teuorg/n0tr00teuorg.github.io"
   # which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI
@@ -253,7 +253,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       title = "n0tr00t's blog"
       # subtitle shown in home page (HTML format is supported)
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "<script type='application/javascript'>$(document).ready(function() {$.getJSON('https://api.ip.sb/geoip?callback=?',function(json) {document.write('IP address: ', json.ip);document.write('Timezone: ', json.timezone);document.write('Country: ', json.country);document.write('City: ', json.city);document.write('Latitude: ', json.latitude);document.write('Longitude: ', json.longitude);});});</script>"
+      subtitle = ""
       # whether to use typeit animation for subtitle
       # 是否为副标题显示打字机动画
       typeit = false
@@ -292,7 +292,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Codepen = ""
     FreeCodeCamp = ""
     Bitbucket = ""
-    Stackoverflow = ""
+    Stackoverflow = "19742951"
     Weibo = ""
     Odnoklassniki = ""
     VK = ""
@@ -331,9 +331,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Mastodon = ""
     Thingiverse = ""
     Devto = ""
-    Gitea = ""
+    Gitea = "n0tr00t"
     XMPP = ""
-    Matrix = ""
+    Matrix = "n0tr00teuorg"
     Bilibili = "392761419"
     Discord = "9414"
     DiscordInvite = ""
