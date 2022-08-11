@@ -583,8 +583,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       [params.page.library.js]
         # someJavascript = "some.js"
         # located in "assets/" 位于 "assets/"
-        someJavascript = "https://fastly.jsdelivr.net/gh/n0tr00teuorg/live2d-widget@master/autoload.js"
-        someJavascript = "https://v1.hitokoto.cn?encode=js&select=%23hitokoto"
+        live2d = "https://fastly.jsdelivr.net/gh/n0tr00teuorg/live2d-widget@master/autoload.js"
+        hitokoto = "https://v1.hitokoto.cn?encode=js&select=%23hitokoto"
     # Page SEO config
     # 页面 SEO 配置
     [params.page.seo]
