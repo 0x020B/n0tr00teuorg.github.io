@@ -1,5 +1,5 @@
 baseURL = "https://n0tr00t.eu.org/"
-canonifyURLs = true
+canonifyURLs = false
 theme = ["github.com/dillonzq/LoveIt"]
 publishDir = "docs"
 title = "n0tr00t's blog"
