@@ -586,6 +586,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         live2d = "https://n0tr00t.eu.org/live2d-widget/autoload.js"
 	ipfs = "https://fastly.jsdelivr.net/npm/ipfs/dist/index.min.js"
         hitokoto = "https://v1.hitokoto.cn?encode=js&select=%23hitokoto"
+	tryhackme = "https://tryhackme.com/badge/1278310"
     # Page SEO config
     # 页面 SEO 配置
     [params.page.seo]
