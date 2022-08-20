@@ -4,18 +4,13 @@ date: {{ .Date }}
 draft: true
 author: "n0tr00t"
 authorLink: "https://n0tr00t.eu.org"
-author: ""
-authorLink: ""
 description: ""
 license: ""
 images: []
-
 tags: []
 categories: []
-
 featuredImage: ""
 featuredImagePreview: ""
-
 hiddenFromHomePage: false
 hiddenFromSearch: false
 twemoji: false
@@ -25,7 +20,6 @@ fraction: true
 fontawesome: true
 linkToMarkdown: true
 rssFullText: false
-
 toc:
 	enable: true
 	auto: true
