@@ -491,7 +491,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Valine comment config (https://github.com/xCss/Valine)
       # Valine 评论系统设置 (https://github.com/xCss/Valine)
       [params.page.comment.valine]
-        enable = true
+        enable = false
         appId = "XeY8YaLTpivTM2wte9etIkXE-MdYXbMMI"
         appKey = "qNJP2TEP3JAi4ycDODSebokl"
         placeholder = ""
@@ -557,18 +557,18 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       [params.page.comment.giscus]
         # You can refer to the official documentation of giscus to use the following configuration.
         # 你可以参考官方文档来使用下列配置
-        enable = false
-        repo = ""
-        repoId = ""
+        enable = true
+        repo = "n0tr00teuorg/n0tr00teuorg.github.io"
+        repoId = "R_kgDOHgBUTw"
         category = "Announcements"
-        categoryId = ""
+        categoryId = "DIC_kwDOHgBUT84CRUm7"
         # automatically adapt the current theme i18n configuration when empty
         # 为空时自动适配当前主题 i18n 配置
         lang = ""
-        mapping = "pathname"
+        mapping = "title"
         reactionsEnabled = "1"
         emitMetadata = "0"
-        inputPosition = "bottom"
+        inputPosition = "top"
         lazyLoading = false
         lightTheme = "light"
         darkTheme = "dark"
@@ -688,7 +688,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.compatibility]
     # whether to use Polyfill.io to be compatible with older browsers
     # 是否使用 Polyfill.io 来兼容旧式浏览器
-    polyfill = false
+    polyfill = true
     # whether to use object-fit-images to be compatible with older browsers
     # 是否使用 object-fit-images 来兼容旧式浏览器
-    objectFit = false
+    objectFit = true
