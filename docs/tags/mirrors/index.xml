@@ -38,6 +38,12 @@
 </blockquote>
 <p><a href="https://guardianproject.github.io/haven-nightly/fdroid/repo?fingerprint=4876BF6D514FAEA3C0AC4F5BD9E0E9A6E37E34B6D842A3B30E00EDF40C2C2544" target="_blank" rel="noopener noreffer">https://guardianproject.github.io/haven-nightly/fdroid/repo?fingerprint=4876BF6D514FAEA3C0AC4F5BD9E0E9A6E37E34B6D842A3B30E00EDF40C2C2544</a>
 </p>
+<h2 id="i2p-f-droid-repo">I2P F-Droid Repo</h2>
+<blockquote>
+<p>This is a repository of I2P apps.</p>
+</blockquote>
+<p><a href="https://f-droid.i2p.io/repo/?fingerprint=22658CC69F48D63F63C3D64E2041C81714E2749F3F6E5445C825297A00DDC5B6" target="_blank" rel="noopener noreffer">https://f-droid.i2p.io/repo/?fingerprint=22658CC69F48D63F63C3D64E2041C81714E2749F3F6E5445C825297A00DDC5B6</a>
+</p>
 <h2 id="microg-f-droid-repo">microG F-Droid repo</h2>
 <blockquote>
 <p>This is a repository of microG apps to be used with F-Droid. Applications in this repository are signed official binaries built by the microG Team from the corresponding source code.</p>
