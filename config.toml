@@ -12,6 +12,7 @@ title = "n0tr00t's blog"
 publishDir = "docs"
 # Change the default theme to be use when building the site with Hugo
 theme = "FixIt"
+themesDir = "themes"
 # -------------------------------------------------------------------------------------
 # Menu Settings
 # See: https://fixit.lruihao.cn/theme-documentation-basics/#menu-advanced-configuration
