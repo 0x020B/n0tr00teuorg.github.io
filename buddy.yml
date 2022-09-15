@@ -24,7 +24,8 @@
     execute_commands:
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --import $PRIVEKEY"
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --yes --decrypt-files content/**/*.gpg"
-    - "git submodule update --remote --merge"
+    - "git submodule update --init --recursive --remote"
+    #- "git submodule update --remote --merge"
     - "hugo --minify --gc"
     setup_commands:
     - "apt-get update"
