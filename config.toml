@@ -3,7 +3,15 @@
 # Modifying this file may result in merge conflict
 # See: https://fixit.lruihao.cn/theme-documentation-basics/#site-configuration
 # =====================================================================================
+baseURL = "https://n0tr00t.eu.org/"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "zh-cn"
+# language code
+languageCode = "en"
+title = "n0tr00t' blog"
 
+# Change the default theme to be use when building the site with Hugo
+theme = "FixIt"
 # -------------------------------------------------------------------------------------
 # Menu Settings
 # See: https://fixit.lruihao.cn/theme-documentation-basics/#menu-advanced-configuration
@@ -50,7 +58,7 @@
 # Theme Core Configuration Settings
 # -------------------------------------------------------------------------------------
 
-[params]dd
+[params]
   # FixIt 0.2.15 | CHANGED FixIt theme version
   version = "0.2.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
   # site description
@@ -101,7 +109,7 @@
     # max index length of the chunked content
     contentLength = 4000
     # placeholder of the search bar
-    placeholder = ""
+    placeholder = "阁下想找些什么呢？"
     # FixIt 0.2.1 | NEW max number of results length
     maxResultLength = 10
     # FixIt 0.2.3 | NEW snippet length of the result
@@ -201,7 +209,7 @@
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = ""
+      avatarURL = "/114514.png"
       # FixIt 0.2.7 | CHANGED title shown in home page (HTML format is supported)
       title = "n0tr00t's blog"
       # subtitle shown in home page
