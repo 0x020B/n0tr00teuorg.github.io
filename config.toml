@@ -114,7 +114,7 @@ themesDir = "themes"
   [params.search]
     enable = true
     # type of search engine ("lunr", "algolia")
-    type = "lunr"
+    type = "algolia"
     # max index length of the chunked content
     contentLength = 4000
     # placeholder of the search bar
@@ -128,10 +128,9 @@ themesDir = "themes"
     # FixIt 0.2.4 | NEW whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
-
+      index = "blog"
+      appID = "CD6HDNG8Z0"
+      searchKey = "32740e85abc55c398b69ed2b698bd29b"
   # Header config
   [params.header]
     # FixIt 0.2.13 | CHANGED desktop header mode ("sticky", "normal", "auto")
