@@ -24,7 +24,7 @@
     execute_commands:
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --import $PRIVEKEY"
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --yes --decrypt-files content/**/*.gpg"
-    - "git submodule update --remote --merge"
+    - "git submodule update --init --recursive --remote"
     - "hugo --minify --gc"
     setup_commands:
     - "apt-get update"
@@ -32,8 +32,6 @@
     - "add-apt-repository ppa:longsleep/golang-backports"
     - "apt-get update"
     - "apt-get install -y git golang-go hugo"
-    - "cd n0tr00t"
-    - "git submodule update --init --recursive --remote"
     volume_mappings:
     - "/:/buddy/n0tr00t"
     cache_base_image: true
