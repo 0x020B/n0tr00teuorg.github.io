@@ -9,7 +9,7 @@ defaultContentLanguage = "zh-cn"
 # language code
 languageCode = "en"
 title = "n0tr00t's blog"
-
+publishDir = "docs"
 # Change the default theme to be use when building the site with Hugo
 theme = "FixIt"
 # -------------------------------------------------------------------------------------
