@@ -32,6 +32,7 @@
     - "add-apt-repository ppa:longsleep/golang-backports"
     - "apt-get update"
     - "apt-get install -y git golang-go hugo"
+    - "cd n0tr00t"
     - "git submodule update --init --recursive --remote"
     volume_mappings:
     - "/:/buddy/n0tr00t"
