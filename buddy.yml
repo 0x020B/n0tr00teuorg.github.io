@@ -48,6 +48,7 @@
       - "/i18n"
       - "/resources"
       - "/static"
+      - "/themes"
   - action: "Push to n0tr00teuorg/n0tr00teuorg.gitlab.io"
     type: "PUSH"
     git_auth_mode: "CURRENT"
