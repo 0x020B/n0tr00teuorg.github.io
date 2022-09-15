@@ -30,6 +30,8 @@ themesDir = "themes"
     # title will be shown when you hover on this menu link
     title = ""
     weight = 1
+    [menu.main.params]
+      icon = "fa-solid fa-archive"
   [[menu.main]]
     identifier = "categories"
     pre = ""
@@ -38,6 +40,8 @@ themesDir = "themes"
     url = "/categories/"
     title = ""
     weight = 2
+    [menu.main.params]
+      icon = "fa-solid fa-th"
   [[menu.main]]
     identifier = "tags"
     pre = ""
@@ -46,6 +50,8 @@ themesDir = "themes"
     url = "/tags/"
     title = ""
     weight = 3
+    [menu.main.params]
+      icon = "fa-solid fa-tags"
   [[menu.main]]
     identifier = "about"
     pre = ""
@@ -54,6 +60,8 @@ themesDir = "themes"
     url = "/about/"
     title = ""
     weight = 4
+    [menu.main.params]
+      icon = "fa-solid fa-user-tie"
 
 # -------------------------------------------------------------------------------------
 # Theme Core Configuration Settings
