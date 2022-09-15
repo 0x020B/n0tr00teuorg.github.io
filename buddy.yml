@@ -24,9 +24,11 @@
     execute_commands:
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --import $PRIVEKEY"
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --yes --decrypt-files content/**/*.gpg"
+    - "rm -rvf docs/js/live2d-widget"
     - "git submodule update --init --recursive --remote"
     #- "git submodule update --remote --merge"
     - "hugo --minify --gc"
+    - "git clone https://github.com/n0tr00teuorg/live2d-widget docs/js/live2d-widget"
     setup_commands:
     - "apt-get update"
     - "apt-get install -y software-properties-common"
