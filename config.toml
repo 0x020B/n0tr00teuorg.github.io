@@ -28,7 +28,7 @@ themesDir = "themes"
     title = ""
     weight = 1
     [menu.main.params]
-      icon = ""
+      icon = "img/dn42.ico"
   [[menu.main]]
     identifier = "posts"
     pre = ""
