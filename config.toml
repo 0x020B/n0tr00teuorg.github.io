@@ -20,16 +20,23 @@ themesDir = "themes"
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
+    identifier = "DN42"
     pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "DN42"
+    url = "/dn42/"
+    title = ""
+    weight = 1
+    [menu.main.params]
+      icon = ""
+  [[menu.main]]
+    identifier = "posts"
+    pre = ""
     post = ""
     name = "文章"
     url = "/posts/"
-    # title will be shown when you hover on this menu link
     title = ""
-    weight = 1
+    weight = 2
     [menu.main.params]
       icon = "fa-solid fa-archive"
   [[menu.main]]
@@ -39,7 +46,7 @@ themesDir = "themes"
     name = "分类"
     url = "/categories/"
     title = ""
-    weight = 2
+    weight = 3
     [menu.main.params]
       icon = "fa-solid fa-th"
   [[menu.main]]
@@ -49,7 +56,7 @@ themesDir = "themes"
     name = "标签"
     url = "/tags/"
     title = ""
-    weight = 3
+    weight = 4
     [menu.main.params]
       icon = "fa-solid fa-tags"
   [[menu.main]]
@@ -59,7 +66,7 @@ themesDir = "themes"
     name = "关于"
     url = "/about/"
     title = ""
-    weight = 4
+    weight = 5
     [menu.main.params]
       icon = "fa-solid fa-user-tie"
 
