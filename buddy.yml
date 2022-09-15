@@ -24,14 +24,14 @@
     execute_commands:
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --import $PRIVEKEY"
     - "gpg --pinentry-mode loopback --passphrase \"$(echo $PRIVATE_KEY_PASSWORD | base64 -d)\" --yes --decrypt-files content/**/*.gpg"
-    - "sh themes/FixIt/fixit_checker.sh"
+    - "git submodule update --remote --merge"
     - "hugo --minify --gc"
     setup_commands:
     - "apt-get update"
     - "apt-get install -y software-properties-common"
     - "add-apt-repository ppa:longsleep/golang-backports"
     - "apt-get update"
-    - "apt-get install -y golang-go hugo"
+    - "apt-get install -y git golang-go hugo"
     volume_mappings:
     - "/:/buddy/n0tr00t"
     cache_base_image: true
