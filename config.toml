@@ -8,7 +8,7 @@ baseURL = "https://n0tr00t.eu.org/"
 defaultContentLanguage = "zh-cn"
 # language code
 languageCode = "en"
-title = "n0tr00t' blog"
+title = "n0tr00t's blog"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "FixIt"
