@@ -12,6 +12,8 @@ n0tr00t进行补充</p>
 <h2 id="如何找到wordpress版本">如何找到wordpress版本</h2>
 <pre tabindex="0"><code>https://target.com/feed
 https://target.com/?feed=rss2
+https://target.com/.git/config
+https://target.com/SECURITY.md (开发版)
 </code></pre><h2 id="如何找到插件版本">如何找到插件版本</h2>
 <pre tabindex="0"><code>https://target.com/wp-content/plugins/PLUGINNAME/.git/config
 https://target.com/wp-content/plugins/PLUGINNAME/changelog
