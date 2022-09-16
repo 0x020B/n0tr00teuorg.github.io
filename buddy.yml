@@ -28,7 +28,7 @@
     - "git submodule update --init --recursive --remote"
     #- "git submodule update --remote --merge"
     - "hugo --minify --gc"
-    - "git clone https://github.com/n0tr00teuorg/live2d-widget docs/js/live2d-widget"
+    #- "git clone https://github.com/n0tr00teuorg/live2d-widget docs/js/live2d-widget"
     setup_commands:
     - "apt-get update"
     - "apt-get install -y software-properties-common"
