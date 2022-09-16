@@ -21,14 +21,12 @@ themesDir = "themes"
 [menu]
   [[menu.main]]
     identifier = "DN42"
-    pre = ""
+    pre = "<img src='/img/dn42.ico'>"
     post = ""
     name = "DN42"
     url = "/dn42/"
     title = ""
     weight = 1
-    [menu.main.params]
-      icon = "img/dn42.ico"
   [[menu.main]]
     identifier = "posts"
     pre = ""
