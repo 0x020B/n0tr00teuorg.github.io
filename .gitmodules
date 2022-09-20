@@ -1,3 +1,11 @@
 [submodule "themes/FixIt"]
 	path = themes/FixIt
 	url = https://github.com/hugo-fixit/FixIt.git
+
+[submodule "docs/js/live2d-widget"]
+	path = docs/js/live2d-widget
+	url = https://github.com/n0tr00teuorg/live2d-widget
+
+[submodule "static/js/live2d-widget"]
+	path = static/js/live2d-widget
+	url = https://github.com/n0tr00teuorg/live2d-widget
