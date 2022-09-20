@@ -101,7 +101,7 @@ themesDir = "themes"
   # FixIt 0.2.0 | NEW App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "n0tr00t's bllog"
+    title = "n0tr00t's blog"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -451,7 +451,7 @@ themesDir = "themes"
       Mix = false
     # FixIt 0.2.15 | CHANGED Comment config
     [params.page.comment]
-      enable = false
+      enable = true
       # FixIt 0.2.13 | NEW Artalk comment config (https://artalk.js.org/)
       [params.page.comment.artalk]
         enable = false
@@ -480,16 +480,16 @@ themesDir = "themes"
         clientSecret = ""
       # Valine comment config (https://github.com/xCss/Valine)
       [params.page.comment.valine]
-        enable = false
-        appId = ""
-        appKey = ""
+        enable = true
+        appId = "XeY8YaLTpivTM2wte9etIkXE-MdYXbMMI"
+        appKey = "qNJP2TEP3JAi4ycDODSebokl"
         placeholder = ""
         avatar = "mp"
         meta= ""
         pageSize = 10
         lang = ""
         visitor = true
-        recordIP = true
+        recordIP = false
         highlight = true
         enableQQ = false
         serverURLs = ""
@@ -584,7 +584,7 @@ themesDir = "themes"
         # located in "assets/"
         # Or
         # someJavascript = "https://cdn.example.com/some.js"
-	live2d = "https://n0tr00t.eu.org/live2d-widget/autoload.js"
+	#live2d = "https://n0tr00t.eu.org/live2d-widget/autoload.js"
 	ipfs = "https://fastly.jsdelivr.net/npm/ipfs/dist/index.min.js"
 	hitokoto = "https://v1.hitokoto.cn?encode=js&select=%23hitokoto"
     # FixIt 0.2.10 | CHANGED Page SEO config
@@ -709,7 +709,7 @@ themesDir = "themes"
 
   # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
   [params.githubCorner]
-    enable = false
+    enable = true
     permalink = "https://github.com/n0tr00teuorg/n0tr00teuorg.github.io"
     title = "View source on GitHub"
     position = "right" # left, right
