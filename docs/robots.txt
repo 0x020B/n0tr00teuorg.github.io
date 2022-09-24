@@ -1,4 +1,4 @@
-# 看啥呢
+# What are you looking at?
 User-agent: Baiduspider
 Sitemap: https://n0tr00t.eu.org/baidu_urls.txt
 User-agent: *
