@@ -1,1 +1,6 @@
+# 看啥呢
+User-agent: Baiduspider
+Sitemap: https://n0tr00t.eu.org/baidu_urls.txt
 User-agent: *
+Disallow: /admin
+Sitemap: https://n0tr00t.eu.org/sitemap.xml
