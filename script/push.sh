@@ -3,4 +3,5 @@ gpg --yes --recipient 8AB7E34964AF8C6E6F95FD97AF4B799C81488887 --encrypt-files c
 git add .
 git commit -m "$(date -R)"
 git pull
-git push -u origin main
+git push -u gitlab main
+git push -u github main
