@@ -68,7 +68,7 @@
       - "/i18n"
       - "/resources"
       - "/static"
-  - action: "Push to git@github.com:n0tr00teuorg/n0tr00teuorg.github.io.git"
+  - action: "Push to n0tr00teuorg/n0tr00teuorg.github.io"
     type: "PUSH"
     git_auth_mode: "ENV_KEY"
     env_key: "secure!qDMde5DGKef5dvhbs9MGdA==.KLdCnUjtCK8vgFu2pnTjAQ=="
@@ -76,8 +76,7 @@
     comment: "$BUDDY_EXECUTION_START_DATE"
     without_force: true
     trigger_conditions:
-      - trigger_condition: "ON_CHANGE_AT_PATH"
-        trigger_condition_paths:
-          - "/buddy.yml"
-          - "/docs"
-  
+    - trigger_condition: "ON_CHANGE_AT_PATH"
+      trigger_condition_paths:
+        - "/buddy.yml"
+        - "/docs"  

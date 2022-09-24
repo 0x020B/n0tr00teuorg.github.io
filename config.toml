@@ -97,6 +97,9 @@ themesDir = "themes"
   # FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
   # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
   disableThemeInject = false
+  # FixIt 0.2.16 | NEW Auto Bookmark Support
+  # If true, save the reading progress when closing the page.
+  autoBookmark = true
 
   # FixIt 0.2.0 | NEW App icon config
   [params.app]
@@ -320,8 +323,9 @@ themesDir = "themes"
     MediaWiki= ""
     Plume = ""
     HackTheBox = "1163457"
-    RootMe= ""
+    RootMe = ""
     Feishu = ""
+    TryHackMe = "n0tr00t"
     Phone = ""
     Email = "blog@n0tr00t.eu.org"
     RSS = true
@@ -747,8 +751,33 @@ themesDir = "themes"
       # "vConsole", "eruda" supported
       type = "vConsole"
 
+[mediaTypes]
+  # Options to make output .md files
+  # 用于输出 Markdown 格式文档的设置
+  [mediaTypes."text/markdown"]
+    suffixes = ["md"]
+  # Options to make output .txt files
+  # 用于输出 txt 文件的设置
+  [mediaTypes."text/plain"]
+    suffixes = ["txt"]
+
+[outputFormats]
+  # Options to make output .md files
+  # 用于输出 Markdown 格式文档的设置
+  [outputFormats.MarkDown]
+    mediaType = "text/plain"
+    isPlainText = true
+    isHTML = false
+  # Options to make output baidu_urls.txt file
+  # 用于输出 baidu_urls.txt 文件的设置
+  [outputFormats.BaiduUrls]
+    baseName = "baidu_urls"
+    mediaType = "text/plain"
+    isPlainText = true
+    isHTML = false
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "BaiduUrls"]
 
 # -------------------------------------------------------------------------------------
 # Hugo version required
