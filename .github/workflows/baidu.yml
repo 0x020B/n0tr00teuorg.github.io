@@ -1,0 +1,14 @@
+name: Baidu
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run:|
+        curl -vLO urls.txt https://raw.githubusercontent.com/n0tr00teuorg/n0tr00teuorg.github.io/main/docs/robots.txt
+        curl -H 'Content-Type:text/plain' --data-binary @urls.txt "http://data.zz.baidu.com/urls?site=https://n0tr00t.eu.org&token=${{ secrets.BAIDU_TOKEN }}"
