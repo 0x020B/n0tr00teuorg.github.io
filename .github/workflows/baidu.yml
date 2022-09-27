@@ -13,5 +13,5 @@ jobs:
         env:
           token: ${{ secrets.BAIDU_TOKEN }}
         run: |
-          curl -vLO urls.txt https://raw.githubusercontent.com/n0tr00teuorg/n0tr00teuorg.github.io/main/docs/robots.txt
+          curl -vLo urls.txt https://raw.githubusercontent.com/n0tr00teuorg/n0tr00teuorg.github.io/main/docs/baidu_urls.txt
           curl -H 'Content-Type:text/plain' --data-binary @urls.txt "http://data.zz.baidu.com/urls?site=https://n0tr00t.eu.org&token=$token"
