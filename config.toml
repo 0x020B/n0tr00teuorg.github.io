@@ -80,7 +80,7 @@ themesDir = "themes"
   # site keywords
   keywords = ["n0tr00t", "blog"]
   # site default theme ("light", "dark", "auto")
-  defaultTheme = "auto"
+  defaultTheme = "light"
   # public git repo url only then enableGitInfo is true
   gitRepo = "https://github.com/n0tr00teuorg/n0tr00teuorg.github.io"
   # FixIt 0.1.1 | NEW which hash function used for SRI, when empty, no SRI is used
