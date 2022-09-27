@@ -2,11 +2,8 @@ name: Baidu
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  workflow_dispatch:
 jobs:
-  build:
+  push:
     runs-on: ubuntu-latest
     steps:
       - shell: bash
