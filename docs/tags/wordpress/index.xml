@@ -3,4 +3,4 @@
 如何挖掘Wordpress网站的漏洞 如果您访问https://target.com并查看源代码，您将看到来自 WordPress 的主题和插件的链接。
 或者你可以访问https://target.com/wp-login.php，它是 WordPress 登录管理页面
 通过查看核心、插件和主题版本找到相关的CVE
-如何找到wordpress版本 1 2 3 4 https://target.com/feed https://target.com/?feed=rss2 https://target.com/.git/config https://target.com/SECURITY.md (开发版) 如何找到插件版本 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 https://target.com/wp-content/plugins/PLUGINNAME/.git/config https://target.com/wp-content/plugins/PLUGINNAME/changelog https://target.com/wp-content/plugins/PLUGINNAME/changelog.txt https://target.com/wp-content/plugins/PLUGINNAME/changelog.md https://target.com/wp-content/plugins/PLUGINNAME/changelog.rst https://target.</description></item></channel></rss>
+如何找到wordpress版本 1 2 3 4 https://target.com/feed https://target.com/?feed=rss2 https://target.com/.git/config https://target.com/SECURITY.md (开发版) 如何找到插件版本 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 https://target.</description></item></channel></rss>
