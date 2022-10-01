@@ -89,7 +89,7 @@ themesDir = "themes"
   # FixIt 0.2.0 | NEW date format
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
-  images = ["/114514.png"]
+  images = ["/favicon.ico"]
   # FixIt 0.2.12 | NEW enable PWA
   enablePWA = true
   # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
@@ -287,7 +287,7 @@ themesDir = "themes"
     Strava = ""
     Skype = ""
     Whatsapp = ""
-    Zhihu = ""
+    Zhihu = "n0tr00t"
     Douban = ""
     Angellist = ""
     Slidershare = ""
