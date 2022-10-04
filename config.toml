@@ -78,7 +78,7 @@ themesDir = "themes"
   # site description
   description = "n0tr00t's blog"
   # site keywords
-  keywords = ["n0tr00t", "blog"]
+  keywords = ["n0tr00t", "blog", "安全", "博客", "notroot", "n0tr00teuorg"]
   # site default theme ("light", "dark", "auto")
   defaultTheme = "light"
   # public git repo url only then enableGitInfo is true
