@@ -333,7 +333,7 @@ themesDir = "themes"
   # FixIt 0.2.0 | CHANGED Page config
   [params.page]
     # FixIt 0.2.0 | NEW whether to hide a page from home page
-    hiddenFromHomePage = true
+    hiddenFromHomePage = false
     # FixIt 0.2.0 | NEW whether to hide a page from search results
     hiddenFromSearch = false
     # FixIt 0.2.0 | NEW whether to enable twemoji
@@ -619,7 +619,7 @@ themesDir = "themes"
   # FixIt 0.2.12 | NEW PanguJS config
   [params.pangu]
     # For Chinese writing
-    enable = false
+    enable = true
 
   # FixIt 0.2.12 | NEW Watermark config
   # Detail config see https://github.com/Lruihao/watermark#readme
@@ -648,9 +648,9 @@ themesDir = "themes"
 
   # FixIt 0.2.12 | NEW Busuanzi count
   [params.ibruce]
-    enable = false
+    enable = true
     # Enable in post meta
-    enablePost = false
+    enablePost = true
     # FixIt 0.2.14 | CHANGED FixIt 0.2.15 | DELETED Site creation time
     # The parameter `ibruce.siteTime` is deprecated since v0.2.14, use `footer.siteTime` instead
     # siteTime = '' # e.g. '2019-02-03T19:30:34+08:00'
