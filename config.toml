@@ -619,7 +619,7 @@ themesDir = "themes"
   # FixIt 0.2.12 | NEW PanguJS config
   [params.pangu]
     # For Chinese writing
-    enable = true
+    enable = false
 
   # FixIt 0.2.12 | NEW Watermark config
   # Detail config see https://github.com/Lruihao/watermark#readme
@@ -648,9 +648,9 @@ themesDir = "themes"
 
   # FixIt 0.2.12 | NEW Busuanzi count
   [params.ibruce]
-    enable = true
+    enable = false
     # Enable in post meta
-    enablePost = true
+    enablePost = false
     # FixIt 0.2.14 | CHANGED FixIt 0.2.15 | DELETED Site creation time
     # The parameter `ibruce.siteTime` is deprecated since v0.2.14, use `footer.siteTime` instead
     # siteTime = '' # e.g. '2019-02-03T19:30:34+08:00'
@@ -715,7 +715,7 @@ themesDir = "themes"
   [params.githubCorner]
     enable = true
     permalink = "https://github.com/n0tr00teuorg/n0tr00teuorg.github.io"
-    title = "View source on GitHub"
+    title = "想看看本站源码吗？"
     position = "right" # left, right
   # FixIt 0.2.14 | NEW Gravatar config
   [params.gravatar]
