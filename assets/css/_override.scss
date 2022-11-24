@@ -1,1 +1,6 @@
-
+@font-face {
+    font-family: Mengshen-Handwritten;
+    src: url('/font/Mengshen-Handwritten.ttf');
+    font-display: swap;
+  }
+$global-font-family: Mengshen-Handwritten;
