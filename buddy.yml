@@ -40,6 +40,7 @@
     - trigger_condition: "ON_CHANGE_AT_PATH"
       trigger_condition_paths:
       - "/archetypes"
+      - "/assets"
       - "/buddy.yml"
       - "/config.toml"
       - "/content"
@@ -58,16 +59,8 @@
     trigger_conditions:
     - trigger_condition: "ON_CHANGE_AT_PATH"
       trigger_condition_paths:
-      - "/archetypes"
-      - "/buddy.yml"
-      - "/config.toml"
-      - "/content"
-      - "/data"
       - "/docs"
-      - "/layouts"
-      - "/i18n"
-      - "/resources"
-      - "/static"
+      - "/buddy.yml"
   - action: "Push to n0tr00teuorg/n0tr00teuorg.github.io"
     type: "PUSH"
     git_auth_mode: "ENV_KEY"
