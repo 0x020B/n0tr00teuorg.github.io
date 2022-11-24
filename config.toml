@@ -184,7 +184,7 @@ themesDir = "themes"
     # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
     gov = ""
     # ICP info only in China (HTML format is supported)
-    icp = "<a href='https://icp.gov.moe/?keyword=20229896' target='_blank'>萌ICP备20229896号</a>'
+    icp = "<a href='https://icp.gov.moe/?keyword=20229896' target='_blank'>萌ICP备20229896号</a>"
     # license info (HTML format is supported)
     license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
 
