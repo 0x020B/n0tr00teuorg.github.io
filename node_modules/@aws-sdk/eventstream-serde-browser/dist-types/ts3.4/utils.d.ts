@@ -1,0 +1,6 @@
+export declare const readableStreamtoIterable: <T>(
+  readableStream: ReadableStream<T>
+) => AsyncIterable<T>;
+export declare const iterableToReadableStream: <T>(
+  asyncIterable: AsyncIterable<T>
+) => ReadableStream<T>;

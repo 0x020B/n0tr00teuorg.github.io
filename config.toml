@@ -588,8 +588,12 @@ themesDir = "themes"
         # located in "assets/"
         # Or
         # someJavascript = "https://cdn.example.com/some.js"
+<<<<<<< HEAD
         #live2d = "https://n0tr00t.eu.org/live2d-widget/autoload.js"
         snowflakes = "https://cdn.jsdelivr.net/gh/nextapps-de/snowflake@master/snowflake.min.js"
+=======
+	#live2d = "https://n0tr00t.eu.org/live2d-widget/autoload.js"
+>>>>>>> 0ab31bf (Tue, 27 Dec 2022 16:42:13 +0000)
         ipfs = "https://fastly.jsdelivr.net/npm/ipfs/dist/index.min.js"
         hitokoto = "https://v1.hitokoto.cn?encode=js&select=%23hitokoto"
     # FixIt 0.2.10 | CHANGED Page SEO config

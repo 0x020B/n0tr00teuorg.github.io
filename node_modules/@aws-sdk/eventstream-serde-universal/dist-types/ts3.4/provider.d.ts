@@ -1,0 +1,2 @@
+import { EventStreamSerdeProvider } from "@aws-sdk/types";
+export declare const eventStreamSerdeProvider: EventStreamSerdeProvider;

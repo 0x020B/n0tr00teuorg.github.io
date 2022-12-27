@@ -1,0 +1,57 @@
+{
+  "name": "ipld-raw",
+  "version": "7.0.1",
+  "description": "JavaScript implementation of the IPLD raw format.",
+  "leadMaintainer": "Volker Mische <volker.mische@gmail.com>",
+  "main": "src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "test": "aegir test",
+    "test:browser": "aegir test --target browser",
+    "test:node": "aegir test --target node",
+    "lint": "aegir lint",
+    "release": "aegir release",
+    "release-minor": "aegir release --type minor",
+    "release-major": "aegir release --type major",
+    "build": "aegir build"
+  },
+  "pre-push": [
+    "lint",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipld/js-ipld-raw.git"
+  },
+  "contributors": [
+    "Volker Mische <volker.mische@gmail.com>",
+    "David Dias <daviddias.p@gmail.com>",
+    "kumavis <aaron@kumavis.me>",
+    "Alex Potsides <alex@achingbrain.net>",
+    "Richard Schneider <makaretu@gmail.com>",
+    "ᴠɪᴄᴛᴏʀ ʙᴊᴇʟᴋʜᴏʟᴍ <victorbjelkholm@gmail.com>",
+    "Chris Hafey <chafey@gmail.com>",
+    "Garren Smith <garren.smith@gmail.com>",
+    "Alan Shaw <alan.shaw@protocol.ai>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ipld/js-ipld-raw/issues"
+  },
+  "homepage": "https://github.com/ipld/js-ipld-raw#readme",
+  "dependencies": {
+    "cids": "^1.1.6",
+    "interface-ipld-format": "^1.0.0",
+    "multicodec": "^3.0.1",
+    "multihashing-async": "^2.1.2"
+  },
+  "devDependencies": {
+    "aegir": "^31.0.4",
+    "uint8arrays": "^2.1.3"
+  }
+}

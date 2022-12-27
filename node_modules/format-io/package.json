@@ -1,0 +1,47 @@
+{
+  "name": "format-io",
+  "version": "2.0.0",
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
+  "description": "Format size, permissions",
+  "homepage": "http://github.com/coderaiser/format-io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderaiser/format-io.git"
+  },
+  "keywords": [
+    "format",
+    "size",
+    "permissions"
+  ],
+  "scripts": {
+    "fix:lint": "madrun fix:lint",
+    "lint": "madrun lint",
+    "lint:test": "madrun lint:test",
+    "test": "madrun test",
+    "report": "madrun report",
+    "coverage": "madrun coverage",
+    "watcher": "madrun watcher",
+    "watch:test": "madrun watch:test",
+    "watch:lint": "madrun watch:lint"
+  },
+  "dependencies": {
+    "currify": "^4.0.0"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "main": "lib/format.js",
+  "devDependencies": {
+    "coveralls": "^3.0.1",
+    "eslint": "^6.4.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-putout": "^2.0.0",
+    "madrun": "^3.0.5",
+    "mkdirp": "^0.5.1",
+    "nodemon": "^1.17.5",
+    "nyc": "^14.1.1",
+    "putout": "^6.1.0",
+    "supertape": "^1.2.3"
+  }
+}
