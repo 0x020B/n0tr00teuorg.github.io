@@ -1,0 +1,35 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build
+        env:
+          PASSWORD: ${{ secrets.PRIVATE_KEY_PASSWORD }}
+          PRIVEKEY: ${{ secrets.PRIVATE_KEY }}
+        run: |
+          gpg --pinentry-mode loopback --passphrase "$(echo $PASSWORD | base64 -d)" --import - <<< "$PRIVEKEY"
+          gpg --pinentry-mode loopback --passphrase "$(echo $PASSWORD | base64 -d)" --yes --decrypt-files content/**/*.gpg
+          hugo --minify --gc
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
