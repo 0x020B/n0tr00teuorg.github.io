@@ -600,6 +600,7 @@ themesDir = "themes"
         # someJavascript = "https://cdn.example.com/some.js"
         #live2d = "https://n0tr00t.eu.org/live2d-widget/autoload.js"
         snowflakes = "https://cdn.jsdelivr.net/gh/nextapps-de/snowflake@master/snowflake.min.js"
+        ipfs = "https://fastly.jsdelivr.net/npm/ipfs/dist/index.min.js"
         hitokoto = "https://v1.hitokoto.cn?encode=js&select=%23hitokoto"
     # FixIt 0.2.10 | CHANGED Page SEO config
     [params.page.seo]
