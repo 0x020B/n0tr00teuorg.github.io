@@ -13,6 +13,7 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=n0tr00teuorg_n0tr00teuorg.github.io&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=n0tr00teuorg_n0tr00teuorg.github.io)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/979f4af0-79d0-47db-9b9f-8af8aa89d960/deploy-status)](https://app.netlify.com/sites/n0tr00t/deploys)
 [![Baidu](https://github.com/n0tr00teuorg/n0tr00teuorg.github.io/actions/workflows/baidu.yml/badge.svg)](https://github.com/n0tr00teuorg/n0tr00teuorg.github.io/actions/workflows/baidu.yml)
+
 # ToDo  
 - [x] 域名
 	- [x] eu.org
