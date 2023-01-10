@@ -59,8 +59,8 @@
     trigger_conditions:
     - trigger_condition: "ON_CHANGE_AT_PATH"
       trigger_condition_paths:
-      - "/docs"
       - "/buddy.yml"
+      - "/docs"
   - action: "Push to n0tr00teuorg/n0tr00teuorg.github.io"
     type: "PUSH"
     git_auth_mode: "ENV_KEY"
