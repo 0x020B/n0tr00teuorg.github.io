@@ -29,14 +29,25 @@ themesDir = "themes"
     weight = 1
   [[menu.main]]
     identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
     name = "文章"
     url = "/posts/"
+    # title will be shown when you hover on this menu link
     title = ""
-    weight = 2
+    weight = 1
+    # FixIt 0.2.14 | NEW add user-defined content to menu items
     [menu.main.params]
+      # add css class to a specific menu item
+      class = ""
+      # whether set as a draft menu item whose function is similar to a draft post/page
+      draft = false
+      # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
       icon = "fa-solid fa-archive"
+      # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
+      type = ""
   [[menu.main]]
     identifier = "categories"
     pre = ""
@@ -125,7 +136,7 @@ themesDir = "themes"
     tileColor = "#da532c"
     # FixIt 0.2.12 | CHANGED Android browser theme color
     [params.app.themeColor]
-      light = "#ffffff"
+      light = "#f8f8f8"
       dark = "#252627"
 
   # FixIt 0.2.0 | NEW Search config
@@ -146,14 +157,26 @@ themesDir = "themes"
     # FixIt 0.2.4 | NEW whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
-      index = "blog"
-      appID = "CD6HDNG8Z0"
-      searchKey = "32740e85abc55c398b69ed2b698bd29b"
+      index = ""
+      appID = ""
+      searchKey = ""
+    [params.search.fuse]
+      # FixIt 0.2.17 | NEW https://fusejs.io/api/options.html
+      isCaseSensitive = false
+      minMatchCharLength = 2
+      findAllMatches = false
+      location = 0
+      threshold = 0.3
+      distance = 100
+      ignoreLocation = false
+      useExtendedSearch = false
+      ignoreFieldNorm = false
+
   # Header config
   [params.header]
-    # FixIt 0.2.13 | CHANGED desktop header mode ("sticky", "normal", "auto")
+    # FixIt 0.2.13 | CHANGED desktop header mode ["sticky", "normal", "auto"]
     desktopMode = "sticky"
-    # FixIt 0.2.13 | CHANGED mobile header mode ("sticky", "normal", "auto")
+    # FixIt 0.2.13 | CHANGED mobile header mode ["sticky", "normal", "auto"]
     mobileMode = "auto"
     # FixIt 0.2.0 | NEW Header title config
     [params.header.title]
@@ -177,8 +200,9 @@ themesDir = "themes"
   # Footer config
   [params.footer]
     enable = true
-    # FixIt 0.2.0 | NEW Custom content (HTML format is supported)
-    custom = "<p id='hitokoto'><a href='#' id='hitokoto_text'>:D 获取中...</a></p>"
+    # FixIt 0.2.17 | CHANGED Custom content (HTML format is supported)
+    # For advanced use, see parameter `params.customFilePath.footer`
+    custom = ""
     # FixIt 0.2.0 | NEW whether to show Hugo and theme info
     hugo = true
     # FixIt 0.2.0 | NEW whether to show copyright info
@@ -186,9 +210,7 @@ themesDir = "themes"
     # FixIt 0.2.0 | NEW whether to show the author
     author = true
     # Site creation year
-    since = 2022
-    # FixIt 0.2.14 | NEW Site creation time
-    siteTime = '' # e.g. '2019-02-03T19:30:34+08:00'
+    since = 2021
     # FixIt 0.2.14 | NEW whether to show total word count of site content
     wordCount = true
     # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
@@ -197,6 +219,19 @@ themesDir = "themes"
     icp = "<a href='https://icp.gov.moe/?keyword=20229896' target='_blank'>萌ICP备20229896号</a>"
     # license info (HTML format is supported)
     license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
+    # FixIt 0.2.17 | CHANGED Site creation time
+      animate = true
+      enable = false
+      icon = "fa-solid fa-heartbeat"
+      pre = ""
+      value = "" # e.g. "2021-12-18T16:15:22+08:00"
+    # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
+    [params.footer.order]
+      powered = 0
+      copyright = 0
+      statistics = 0
+      visitor = 0
+      beian = 0
 
   # FixIt 0.2.0 | NEW Section (all posts) page config
   [params.section]
@@ -222,6 +257,14 @@ themesDir = "themes"
     # amount of RSS pages
     rss = 10
 
+  # FixIt 0.2.17 | NEW TagCloud config for tags page
+  [params.tagcloud]
+    enable = false
+    min = 14 # Minimum font size in px
+    max = 32 # Maximum font size in px
+    peakCount = 10 # Maximum count of posts per tag
+    orderby = "name" # Order of tags, optional values: ["name", "count"]
+
   # Home page config
   [params.home]
     # FixIt 0.2.0 | NEW amount of RSS pages
@@ -236,6 +279,8 @@ themesDir = "themes"
       gravatarEmail = ""
       # URL of avatar shown in home page
       avatarURL = "/114514.png"
+      # FixIt 0.2.17 | NEW identifier of avatar menu link
+      avatarMenu = ""
       # FixIt 0.2.7 | CHANGED title shown in home page (HTML format is supported)
       title = "n0tr00t's blog"
       # subtitle shown in home page
@@ -362,10 +407,20 @@ themesDir = "themes"
     linkToMarkdown = true
     # FixIt 0.2.4 | NEW whether to show the full text content in RSS
     rssFullText = false
-    # FixIt 0.2.13 | NEW Page style ("narrow", "normal", "wide", ...)
+    # FixIt 0.2.13 | NEW Page style ["narrow", "normal", "wide", ...]
     pageStyle = "normal"
     # FixIt 0.2.14 | NEW Gravatar is force-used as the author's avatar
     gravatarForce = false
+    # FixIt 0.2.17 | CHANGED Auto Bookmark Support
+    # If true, save the reading progress when closing the page.
+    autoBookmark = true
+    # FixIt 0.2.17 | NEW whether to enable wordCount
+    wordCount = true
+    # FixIt 0.2.17 | NEW whether to enable readingTime
+    readingTime = true
+    # FixIt 0.2.17 | NEW end of post flag
+    endFlag = ""
+
     # FixIt 0.2.15 | NEW Repost config
     [params.page.repost]
       enable = false
@@ -378,7 +433,7 @@ themesDir = "themes"
       keepStatic = false
       # whether to make the table of the contents in the sidebar automatically collapsed
       auto = true
-      # FixIt 0.2.13 | NEW position of TOC ("left", "right")
+      # FixIt 0.2.13 | NEW position of TOC ["left", "right"]
       position = "right"
     # FixIt 0.2.13 | NEW Display a message at the beginning of an article to warn the reader that its content might be expired
     [params.page.expirationReminder]
@@ -432,7 +487,19 @@ themesDir = "themes"
       # whether to add ScaleControl
       scale = true
       # whether to add FullscreenControl
+    [params.page.reward]
       fullscreen = true
+    # FixIt 0.2.17 | NEW Donate (Sponsor) settings
+      enable = false
+      animation = false
+      # position relative to post footer, optional values: ["before", "after"]
+      position = "after"
+      # comment = "Buy me a coffee"
+      [params.page.reward.ways]
+        # wechatpay = "/images/wechatpay.png"
+        # alipay = "/images/alipay.png"
+        # paypal = "/images/paypal.png"
+        # bitcoin = "/images/bitcoin.png"
     # FixIt 0.2.0 | CHANGED social share links in post page
     [params.page.share]
       enable = true
@@ -475,9 +542,9 @@ themesDir = "themes"
         noComment = ""
         sendBtn = ""
         editorTravel = true
-        flatMode = 'auto'
+        flatMode = "auto"
         maxNesting = 3
-        # It take effect when `params.page.lightgallery` is enabled
+        # FixIt 0.2.17 | CHANGED enable lightgallery support
         lightgallery = false
         locale = "" # FixIt 0.2.15 | NEW
       # FixIt 0.1.1 | NEW Disqus comment config (https://disqus.com)
@@ -508,31 +575,29 @@ themesDir = "themes"
         enableQQ = false
         serverURLs = ""
         # FixIt 0.2.6 | NEW emoji data file name, default is "google.yml"
-        # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
-        # located in "themes/FixIt/assets/data/emoji/" directory
+        # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
+        # located in "themes/FixIt/assets/lib/valine/emoji/" directory
         # you can store your own data files in the same path under your project:
-        # "assets/data/emoji/"
+        # "assets/lib/valine/emoji/"
         emoji = ""
         commentCount = true # FixIt 0.2.13 | NEW
-      # FixIt 0.2.13 | NEW Waline comment config (https://waline.js.org)
+      # FixIt 0.2.16 | CHANGED Waline comment config (https://waline.js.org)
       [params.page.comment.waline]
         enable = false
         serverURL = ""
         pageview = false # FixIt 0.2.15 | NEW
-        emoji = ['//unpkg.com/@waline/emojis@1.0.1/weibo']
-        meta = ['nick', 'mail', 'link']
+        emoji = ["//unpkg.com/@waline/emojis@1.1.0/weibo"]
+        meta = ["nick", "mail", "link"]
         requiredMeta = []
-        login = 'enable'
+        login = "enable"
         wordLimit = 0
         pageSize = 10
         imageUploader = false # FixIt 0.2.15 | NEW
         highlighter = false # FixIt 0.2.15 | NEW
         comment = false # FixIt 0.2.15 | NEW
-        # visitor = false # FixIt 0.2.15 | DELETED renamed to pageview
-        # uploadImage = false # FixIt 0.2.15 | DELETED renamed to imageUploader
-        # highlight = true # FixIt 0.2.15 | DELETED renamed to highlighter
-        # mathTagSupport = false FixIt 0.2.15 | DELETED
-        # commentCount = false FixIt 0.2.15 | DELETED renamed to comment
+        texRenderer = false # FixIt 0.2.16 | NEW
+        search = false # FixIt 0.2.16 | NEW
+        recaptchaV3Key = "" # FixIt 0.2.16 | NEW
       # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
       [params.page.comment.facebook]
         enable = false
@@ -570,8 +635,10 @@ themesDir = "themes"
         path = ""
         visitor = true
         commentCount = true
-        # It take effect when `params.page.lightgallery` is enabled
+        # FixIt 0.2.17 | CHANGED enable lightgallery support
         lightgallery = false
+        # FixIt 0.2.17 | NEW enable Katex support
+        katex = false
       # FixIt 0.2.14 | NEW Giscus comments config
       [params.page.comment.giscus]
         enable = false
@@ -600,7 +667,7 @@ themesDir = "themes"
         # someJavascript = "https://cdn.example.com/some.js"
         #live2d = "https://n0tr00t.eu.org/live2d-widget/autoload.js"
         snowflakes = "https://cdn.jsdelivr.net/gh/nextapps-de/snowflake@master/snowflake.min.js"
-        ipfs = "https://fastly.jsdelivr.net/npm/ipfs/dist/index.min.js"
+        #ipfs = "https://fastly.jsdelivr.net/npm/ipfs/dist/index.min.js"
         hitokoto = "https://v1.hitokoto.cn?encode=js&select=%23hitokoto"
     # FixIt 0.2.10 | CHANGED Page SEO config
     [params.page.seo]
@@ -621,27 +688,28 @@ themesDir = "themes"
     cursorChar = "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
     duration = -1
-  
+
   # FixIt 0.2.15 | NEW Mermaid config
   [params.mermaid]
     # For values, see https://mermaid-js.github.io/mermaid/#/Setup?id=theme
-    themes = ['neutral', 'dark']
+    themes = ["neutral", "dark"]
 
   # FixIt 0.2.12 | NEW PanguJS config
   [params.pangu]
     # For Chinese writing
     enable = false
+    selector = "article" # FixIt 0.2.17 | NEW
 
   # FixIt 0.2.12 | NEW Watermark config
   # Detail config see https://github.com/Lruihao/watermark#readme
   [params.watermark]
     enable = false
     # watermark's text (HTML format is supported)
-    content = ''
+    content = ""
     # watermark's transparency
     opacity = 0.1
     # parent of watermark's container
-    appendTo = '.wrapper>main'
+    appendTo = ".wrapper>main"
     # watermark's width. unit: px
     width = 150
     # watermark's height. unit: px
@@ -655,7 +723,7 @@ themesDir = "themes"
     # watermark's fontSize. unit: rem
     fontSize = 0.85
     # FixIt 0.2.13 | NEW watermark's fontFamily
-    fontFamily = 'inherit'
+    fontFamily = "inherit"
 
   # FixIt 0.2.12 | NEW Busuanzi count
   [params.ibruce]
@@ -708,12 +776,10 @@ themesDir = "themes"
 
   # FixIt 0.2.7 | CHANGED CDN config for third-party library files
   [params.cdn]
-    # CDN data file name, disabled by default
-    # ("jsdelivr.yml", "unpkg.yml")
+    # CDN data file name, disabled by default ["jsdelivr.yml", "unpkg.yml", ...]
     # located in "themes/FixIt/assets/data/cdn/" directory
-    # you can store your own data files in the same path under your project:
-    # "assets/data/cdn/"
-    # data = "unpkg"
+    # you can store your own data files in the same path under your project: "assets/data/cdn/"
+    data = ""
 
   # FixIt 0.2.8 | NEW Compatibility config
   [params.compatibility]
@@ -727,17 +793,20 @@ themesDir = "themes"
     enable = true
     permalink = "https://github.com/n0tr00teuorg/n0tr00teuorg.github.io"
     title = "想看看本站源码吗？"
-    position = "right" # left, right
+    position = "right" # ["left", "right"]
+
   # FixIt 0.2.14 | NEW Gravatar config
   [params.gravatar]
     # Gravatar host, default: "www.gravatar.com"
-    host = "www.gravatar.com" # "cn.gravatar.com", "gravatar.loli.net"
-    style = "" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
+    host = "gravatar.loli.net" # ["cn.gravatar.com", "gravatar.loli.net", ...]
+    style = "" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
+
   # FixIt 0.2.16 | NEW Back to top
   [params.backToTop]
     enable = true
     # Scroll percent label in b2t button
     scrollpercent = false
+
   # FixIt 0.2.16 | NEW Reading progress bar
   [params.readingProgress]
     enable = false
@@ -749,6 +818,26 @@ themesDir = "themes"
     light = ""
     dark = ""
     height = "2px"
+  
+  # FixIt 0.2.17 | NEW Progress bar in the top during page loading.
+  # For more information: https://github.com/CodeByZach/pace
+  [params.pace]
+    enable = true
+    # All available colors:
+    # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
+    color = "pink"
+    # All available themes:
+    # ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple",
+    # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
+    theme = "minimal"
+  
+  # FixIt 0.2.17 | NEW Define custom file paths
+  # Create your custom files in site directory `layouts/partials/custom` and uncomment needed files below
+  [params.customFilePath]
+    # aside = "custom/aside.html"
+    # profile = "custom/profile.html"
+    # footer = "custom/footer.html"
+
   # FixIt 0.2.15 | NEW Developer options
   [params.dev]
     enable = false
