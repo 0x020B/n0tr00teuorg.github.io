@@ -57,7 +57,6 @@ themesDir = "themes"
     weight = 4
     [menu.main.params]
       icon = "fa-solid fa-tags"
-
   [[menu.main]]
     identifier = "favorites"
     pre = ""
@@ -68,7 +67,6 @@ themesDir = "themes"
     weight = 5
     [menu.main.params]
       icon = "fa-solid fa-star"
-  
   [[menu.main]]
     identifier = "about"
     pre = ""
