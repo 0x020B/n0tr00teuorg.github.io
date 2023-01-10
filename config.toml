@@ -691,13 +691,13 @@ themesDir = "themes"
     # watermark's text (HTML format is supported)
     content = "https://n0tr00t.eu.org"
     # watermark's transparency
-    opacity = 0.1
+    opacity = 0.01
     # parent of watermark's container
     appendTo = ".wrapper>main"
     # watermark's width. unit: px
-    width = 150
+    width = 100
     # watermark's height. unit: px
-    height = 20
+    height = 10
     # row spacing of watermarks. unit: px
     rowSpacing = 60
     # col spacing of watermarks. unit: px
