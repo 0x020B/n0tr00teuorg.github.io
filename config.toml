@@ -36,10 +36,7 @@ themesDir = "themes"
     title = ""
     weight = 1
     [menu.main.params]
-      class = ""
-      draft = false
       icon = "fa-solid fa-archive"
-      type = ""
   [[menu.main]]
     identifier = "categories"
     pre = ""
@@ -97,7 +94,7 @@ themesDir = "themes"
   # public git repo url only then enableGitInfo is true
   gitRepo = "https://github.com/n0tr00teuorg/n0tr00teuorg.github.io"
   # FixIt 0.1.1 | NEW which hash function used for SRI, when empty, no SRI is used
-  # ("sha256", "sha384", "sha512", "md5")
+  # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = "sha512"
   # FixIt 0.2.0 | NEW date format
   dateFormat = "2006-01-02"
@@ -110,9 +107,6 @@ themesDir = "themes"
   # FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
   # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
   disableThemeInject = false
-  # FixIt 0.2.16 | NEW Auto Bookmark Support
-  # If true, save the reading progress when closing the page.
-  autoBookmark = true
 
   # FixIt 0.2.0 | NEW App icon config
   [params.app]
@@ -134,7 +128,7 @@ themesDir = "themes"
   # FixIt 0.2.0 | NEW Search config
   [params.search]
     enable = true
-    # type of search engine ("lunr", "algolia")
+    # type of search engine ["lunr", "algolia", "fuse]
     type = "lunr"
     # max index length of the chunked content
     contentLength = 4000
@@ -149,9 +143,9 @@ themesDir = "themes"
     # FixIt 0.2.4 | NEW whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
+      index = "blog"
+      appID = "CD6HDNG8Z0"
+      searchKey = "32740e85abc55c398b69ed2b698bd29b"
     [params.search.fuse]
       # FixIt 0.2.17 | NEW https://fusejs.io/api/options.html
       isCaseSensitive = false
@@ -194,7 +188,7 @@ themesDir = "themes"
     enable = true
     # FixIt 0.2.17 | CHANGED Custom content (HTML format is supported)
     # For advanced use, see parameter `params.customFilePath.footer`
-    custom = ""
+    custom = "<p id='hitokoto'><a href='#' id='hitokoto_text'>:D 获取中...</a></p>"
     # FixIt 0.2.0 | NEW whether to show Hugo and theme info
     hugo = true
     # FixIt 0.2.0 | NEW whether to show copyright info
@@ -202,7 +196,7 @@ themesDir = "themes"
     # FixIt 0.2.0 | NEW whether to show the author
     author = true
     # Site creation year
-    since = 2021
+    since = 2022
     # FixIt 0.2.14 | NEW whether to show total word count of site content
     wordCount = true
     # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
@@ -212,8 +206,9 @@ themesDir = "themes"
     # license info (HTML format is supported)
     license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
     # FixIt 0.2.17 | CHANGED Site creation time
-      animate = true
+    [params.footer.siteTime]
       enable = false
+      animate = true
       icon = "fa-solid fa-heartbeat"
       pre = ""
       value = "" # e.g. "2021-12-18T16:15:22+08:00"
@@ -251,7 +246,7 @@ themesDir = "themes"
 
   # FixIt 0.2.17 | NEW TagCloud config for tags page
   [params.tagcloud]
-    enable = false
+    enable = true
     min = 14 # Minimum font size in px
     max = 32 # Maximum font size in px
     peakCount = 10 # Maximum count of posts per tag
@@ -264,9 +259,6 @@ themesDir = "themes"
     # Home page profile
     [params.home.profile]
       enable = true
-      # FixIt 0.2.13 | NEW Gravatar mirror site domain, default: "www.gravatar.com"
-      # FixIt 0.2.14 | CHANGED FixIt 0.2.15 | DELETED The parameter `home.profile.gravatarSite` is deprecated since v0.2.14, use `gravatar.host` instead
-      # gravatarSite = ""
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
@@ -479,9 +471,9 @@ themesDir = "themes"
       # whether to add ScaleControl
       scale = true
       # whether to add FullscreenControl
-    [params.page.reward]
       fullscreen = true
     # FixIt 0.2.17 | NEW Donate (Sponsor) settings
+    [params.page.reward]
       enable = false
       animation = false
       # position relative to post footer, optional values: ["before", "after"]
@@ -722,9 +714,6 @@ themesDir = "themes"
     enable = true
     # Enable in post meta
     enablePost = true
-    # FixIt 0.2.14 | CHANGED FixIt 0.2.15 | DELETED Site creation time
-    # The parameter `ibruce.siteTime` is deprecated since v0.2.14, use `footer.siteTime` instead
-    # siteTime = '' # e.g. '2019-02-03T19:30:34+08:00'
 
   # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu/360/Sogou
   [params.verification]
@@ -837,7 +826,7 @@ themesDir = "themes"
     c4u = false
     # Please do not expose to public!
     githubToken = ""
-    # Mobile Devtools confi
+    # Mobile Devtools config
     [params.dev.mDevtools]
       enable = false
       # "vConsole", "eruda" supported
