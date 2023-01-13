@@ -16,9 +16,8 @@
 
 # ToDo  
 - [x] 域名
-	- [x] eu.org
-	- [ ] ~~js.org~~
-	- [ ] Tor
+	- n0tr00t.eu.org (使用特殊浏览器或特殊插件可走ipfs线路
+	- www.n0tr00t.eu.org (ipfs)
 - [x] 代码托管
 	- [ ] ~~Gitee~~
 	- [ ] Gitea
@@ -26,12 +25,13 @@
 	- [x] GitHub
 - [x] 自动部署
 	- [x] Buddy
+	- [x] Github
 	- [x] netlify
 	- [ ] ...
 - [ ] 评论
-	- [ ] Valine
-- [ ] 内容交付网络
 	- [ ] ...
+- [x] 内容交付网络
+	- [x] b-cdn
 - [ ] 爬虫
 	- [x] Google
 	- [x] Yandex

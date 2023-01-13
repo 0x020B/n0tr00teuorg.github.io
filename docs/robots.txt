@@ -1,0 +1,9 @@
+# wh47 R y0U l00K1N' 47?
+User-agent: Baiduspider
+Sitemap: https://n0tr00t.eu.org/baidu_urls.txt
+User-agent: *
+Disallow: /admin
+Disallow: /categories
+Disallow: /tags
+Disallow: /about
+Sitemap: https://n0tr00t.eu.org/sitemap.xml
