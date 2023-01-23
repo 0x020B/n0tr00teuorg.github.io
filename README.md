@@ -18,6 +18,7 @@
 - [x] 域名
 	- n0tr00t.eu.org (使用特殊浏览器或特殊插件可走ipfs线路
 	- www.n0tr00t.eu.org (ipfs)
+	- n0tr00t-eu-org.ipns.dweb.link
 - [x] 代码托管
 	- [ ] ~~Gitee~~
 	- [ ] Gitea
