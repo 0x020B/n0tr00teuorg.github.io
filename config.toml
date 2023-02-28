@@ -574,7 +574,7 @@ themesDir = "themes"
 	         "//unpkg.com/browse/@waline/emojis/bmoji/",
 	         "//unpkg.com/browse/@waline/emojis/qq",
 	         "//unpkg.com/browse/@waline/emojis/soul-emoji",
-	         "//https://unpkg.com/browse/@waline/emojis/tw",
+	         "//unpkg.com/browse/@waline/emojis/tw",
 	         "//unpkg.com/@waline/emojis/weibo"]
         meta = ["nick", "mail", "link"]
         requiredMeta = []
