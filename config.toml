@@ -516,7 +516,7 @@ themesDir = "themes"
       Mix = false
     # FixIt 0.2.15 | CHANGED Comment config
     [params.page.comment]
-      enable = false
+      enable = true
       # FixIt 0.2.13 | NEW Artalk comment config (https://artalk.js.org/)
       [params.page.comment.artalk]
         enable = false
@@ -545,7 +545,7 @@ themesDir = "themes"
         clientSecret = ""
       # Valine comment config (https://github.com/xCss/Valine)
       [params.page.comment.valine]
-        enable = true
+        enable = false
         appId = "XeY8YaLTpivTM2wte9etIkXE-MdYXbMMI"
         appKey = "qNJP2TEP3JAi4ycDODSebokl"
         placeholder = ""
