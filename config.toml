@@ -14,7 +14,7 @@ publishDir = "docs"
 theme = "FixIt"
 themesDir = "themes"
 # -------------------------------------------------------------------------------------
-# Menu Settings
+# Menu Configuration
 # See: https://fixit.lruihao.cn/theme-documentation-basics/#menu-advanced-configuration
 # -------------------------------------------------------------------------------------
 
@@ -31,7 +31,7 @@ themesDir = "themes"
     identifier = "posts"
     pre = ""
     post = ""
-    name = "文章"
+    name = "Posts"
     url = "/posts/"
     title = ""
     weight = 1
@@ -41,7 +41,7 @@ themesDir = "themes"
     identifier = "tags"
     pre = ""
     post = ""
-    name = "标签"
+    name = "Tags"
     url = "/tags/"
     title = ""
     weight = 3
@@ -69,7 +69,8 @@ themesDir = "themes"
       icon = "fa-solid fa-user-tie"
 
 # -------------------------------------------------------------------------------------
-# Theme Core Configuration Settings
+# Theme Core Configuration
+# See: https://fixit.lruihao.cn/theme-documentation-basics/#site-configuration
 # -------------------------------------------------------------------------------------
 
 [params]
@@ -79,8 +80,8 @@ themesDir = "themes"
   description = "n0tr00t's blog"
   # site keywords
   keywords = ["n0tr00t", "blog", "安全", "博客", "notroot", "n0tr00teuorg"]
-  # site default theme ("light", "dark", "auto")
-  defaultTheme = "light"
+  # site default theme ["light", "dark", "auto"]
+  defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
   gitRepo = "https://github.com/n0tr00teuorg/n0tr00teuorg.github.io"
   # FixIt 0.1.1 | NEW which hash function used for SRI, when empty, no SRI is used
@@ -197,11 +198,11 @@ themesDir = "themes"
     license = '<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><img style="width:27px;height:16px" src="https://creativecommons.org/wp-content/uploads/2022/07/CCLogoColorPop1.gif" /><img style="width:16px;height:16px" src="https://mirrors.creativecommons.org/presskit/icons/by.svg"><img style="width:16px;height:16px" src="https://mirrors.creativecommons.org/presskit/icons/nc-jp.svg"><img style="width:16px;height:16px" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"></a>'
     # FixIt 0.2.17 | CHANGED Site creation time
     [params.footer.siteTime]
-      enable = false
+      enable = true
       animate = true
       icon = "fa-solid fa-heartbeat"
       pre = ""
-      value = "" # e.g. "2021-12-18T16:15:22+08:00"
+      value = "2022-06-18T05:33:29+00:00" # e.g. "2021-12-18T16:15:22+08:00"
     # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
     [params.footer.order]
       powered = 0
@@ -240,7 +241,7 @@ themesDir = "themes"
     min = 14 # Minimum font size in px
     max = 32 # Maximum font size in px
     peakCount = 10 # Maximum count of posts per tag
-    orderby = "name" # Order of tags, optional values: ["name", "count"]
+    orderby = "count" # Order of tags, optional values: ["name", "count"]
 
   # Home page config
   [params.home]
@@ -355,6 +356,8 @@ themesDir = "themes"
     RootMe = ""
     Feishu = ""
     TryHackMe = "n0tr00t"
+    Douyin = ""
+    TikTok = ""
     Phone = ""
     Email = "blog@n0tr00t.eu.org"
     RSS = true
