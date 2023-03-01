@@ -563,11 +563,11 @@ themesDir = "themes"
         enable = true
         serverURL = "https://waline-1-t8096041.deta.app"
         pageview = true # FixIt 0.2.15 | NEW
-        emoji = ["//unpkg.com/browse/@waline/emojis/bilibili",
-	         "//unpkg.com/browse/@waline/emojis/bmoji/",
-	         "//unpkg.com/browse/@waline/emojis/qq",
-	         "//unpkg.com/browse/@waline/emojis/soul-emoji",
-	         "//unpkg.com/browse/@waline/emojis/tw",
+        emoji = ["//unpkg.com/@waline/emojis/bilibili",
+	         "//unpkg.com/@waline/emojis/bmoji/",
+	         "//unpkg.com/@waline/emojis/qq",
+	         "//unpkg.com/@waline/emojis/soul-emoji",
+	         "//unpkg.com/@waline/emojis/tw",
 	         "//unpkg.com/@waline/emojis/weibo"]
         meta = ["nick", "mail", "link"]
         requiredMeta = []
