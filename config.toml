@@ -7,7 +7,7 @@ baseURL = "https://n0tr00t.eu.org/"
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "zh-cn"
 # language code
-languageCode = "en"
+languageCode = "zh"
 title = "n0tr00t's blog"
 publishDir = "docs"
 # Change the default theme to be use when building the site with Hugo
