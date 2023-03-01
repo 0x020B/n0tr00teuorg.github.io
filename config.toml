@@ -38,23 +38,13 @@ themesDir = "themes"
     [menu.main.params]
       icon = "fa-solid fa-archive"
   [[menu.main]]
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "分类"
-    url = "/categories/"
-    title = ""
-    weight = 3
-    [menu.main.params]
-      icon = "fa-solid fa-th"
-  [[menu.main]]
     identifier = "tags"
     pre = ""
     post = ""
     name = "标签"
     url = "/tags/"
     title = ""
-    weight = 4
+    weight = 3
     [menu.main.params]
       icon = "fa-solid fa-tags"
   [[menu.main]]
@@ -64,7 +54,7 @@ themesDir = "themes"
     name = "收藏"
     url = "/favorites/"
     title = ""
-    weight = 5
+    weight = 4
     [menu.main.params]
       icon = "fa-solid fa-star"
   [[menu.main]]
@@ -74,7 +64,7 @@ themesDir = "themes"
     name = "关于"
     url = "/about/"
     title = ""
-    weight = 6
+    weight = 5
     [menu.main.params]
       icon = "fa-solid fa-user-tie"
 
